@@ -1,0 +1,130 @@
+{
+    "reviews": [
+      {
+        "professor": "Dr. Sarah Johnson",
+        "subject": "Computer Science",
+        "stars": 5,
+        "review": "Dr. Johnson is an amazing professor! She is extremely knowledgeable and passionate about the subject matter. Her lectures are engaging and she is always willing to help students during office hours. Highly recommend this course."
+      },
+      {
+        "professor": "Professor Michael Lee",
+        "subject": "Economics",
+        "stars": 4,
+        "review": "Professor Lee is a fair and reasonable instructor. His lectures can be dry at times, but he is very clear in explaining complex economic concepts. The workload is manageable, and he is accessible during office hours."
+      },
+      {
+        "professor": "Dr. Emily Chen",
+        "subject": "Biology",
+        "stars": 5,
+        "review": "Dr. Chen is an exceptional professor. Her lectures are well-organized and she uses a variety of teaching methods to ensure students understand the material. She is also very responsive to student questions and concerns."
+      },
+      {
+        "professor": "Professor David Gonzalez",
+        "subject": "History",
+        "stars": 3,
+        "review": "Professor Gonzalez is a knowledgeable instructor, but his teaching style can be a bit dry at times. The coursework is fair, and he is willing to work with students who are struggling. Overall, a solid professor."
+      },
+      {
+        "professor": "Dr. Samantha Patel",
+        "subject": "Psychology",
+        "stars": 4,
+        "review": "Dr. Patel is a passionate and engaging professor. Her lectures are thought-provoking and she encourages students to participate in class discussions. She is also very accessible and provides helpful feedback on assignments."
+      },
+      {
+        "professor": "Professor John Smith",
+        "subject": "Mathematics",
+        "stars": 4,
+        "review": "Professor Smith has a deep understanding of the subject matter and is able to explain complex concepts clearly. His lectures are well-structured and he provides ample opportunities for students to ask questions and participate."
+      },
+      {
+        "professor": "Dr. Jessica Nguyen",
+        "subject": "Political Science",
+        "stars": 5,
+        "review": "Dr. Nguyen is an outstanding professor. She is knowledgeable, organized, and passionate about the material. Her lectures are engaging and she encourages critical thinking. I highly recommend taking her courses."
+      },
+      {
+        "professor": "Professor Robert Martinez",
+        "subject": "Engineering",
+        "stars": 3,
+        "review": "While Professor Martinez is knowledgeable in his field, his teaching style can be dry and his expectations for coursework can be unreasonable at times. The material is challenging, but he is willing to work with students who put in the effort."
+      },
+      {
+        "professor": "Dr. Aisha Malik",
+        "subject": "Sociology",
+        "stars": 4,
+        "review": "Dr. Malik is a thoughtful and engaging professor. Her lectures are thought-provoking and she encourages class discussions. She is also very accessible and provides detailed feedback on assignments. I learned a lot in her course."
+      },
+      {
+        "professor": "Professor Ahmed Khalil",
+        "subject": "Business",
+        "stars": 4,
+        "review": "Professor Khalil is a knowledgeable and experienced instructor. His lectures are informative and he provides practical examples to illustrate key concepts. The workload is manageable, and he is responsive to student questions and concerns."
+      },
+      {
+        "professor": "Dr. Olivia Rossi",
+        "subject": "Art History",
+        "stars": 5,
+        "review": "Dr. Rossi is an exceptional professor. Her passion for the subject matter is contagious, and she has a remarkable ability to make complex topics accessible and engaging. Her lectures are visually stunning, and she encourages students to think critically about the material."
+      },
+      {
+        "professor": "Professor Liam Fitzgerald",
+        "subject": "Physics",
+        "stars": 4,
+        "review": "Professor Fitzgerald is a knowledgeable and dedicated instructor. His lectures are well-organized and he uses a variety of teaching methods to help students understand the material. He is also available during office hours to provide additional support."
+      },
+      {
+        "professor": "Dr. Isabella Moretti",
+        "subject": "Italian Language",
+        "stars": 5,
+        "review": "Dr. Moretti is an amazing professor. Her classes are engaging and interactive, and she creates a supportive environment for students to learn and practice the language. She is patient, encouraging, and genuinely cares about her students' progress."
+      },
+      {
+        "professor": "Professor Ethan Nguyen",
+        "subject": "Computer Engineering",
+        "stars": 3,
+        "review": "While Professor Nguyen is knowledgeable in his field, his teaching style can be a bit disorganized at times. The coursework is challenging, and he does not always provide clear guidance or feedback. However, he is willing to work with students who are struggling."
+      },
+      {
+        "professor": "Dr. Sophia Hernandez",
+        "subject": "Environmental Science",
+        "stars": 4,
+        "review": "Dr. Hernandez is a passionate and engaging professor. Her lectures are informative and she encourages students to think critically about environmental issues. She is also very responsive to student needs and provides helpful feedback on assignments."
+      },
+      {
+        "professor": "Professor Luca Ricci",
+        "subject": "Finance",
+        "stars": 4,
+        "review": "Professor Ricci is a knowledgeable and experienced instructor. His lectures are well-structured and he provides practical examples to illustrate key concepts. The workload is manageable, and he is willing to work with students who are struggling with the material."
+      },
+      {
+        "professor": "Dr. Ava Patel",
+        "subject": "Neuroscience",
+        "stars": 5,
+        "review": "Dr. Patel is an exceptional professor. Her lectures are engaging and she has a remarkable ability to explain complex topics in a clear and concise manner. She is also very accessible and provides valuable feedback and support to her students."
+      },
+      {
+        "professor": "Professor Lucas Gonzalez",
+        "subject": "Civil Engineering",
+        "stars": 3,
+        "review": "While Professor Gonzalez is knowledgeable in his field, his teaching style can be dry and his expectations for coursework can be unreasonable at times. The material is challenging, and he does not always provide adequate support or guidance to struggling students."
+      },
+      {
+        "professor": "Dr. Mia Rossi",
+        "subject": "Linguistics",
+        "stars": 4,
+        "review": "Dr. Rossi is a passionate and engaging professor. Her lectures are thought-provoking and she encourages students to participate in discussions. She is also very responsive to student needs and provides detailed feedback on assignments."
+      },
+      {
+        "professor": "Professor Mateo Fernandez",
+        "subject": "Spanish Language",
+        "stars": 5,
+        "review": "Professor Fernandez is an exceptional language instructor. His classes are interactive and dynamic, and he creates a supportive environment for students to learn and practice the language. He is patient, encouraging, and genuinely cares about his students' progress."
+      },
+      {
+        "professor": "Dr. Noah Patel",
+        "subject": "Biochemistry",
+        "stars": 4,
+        "review": "Dr. Patel is a knowledgeable and organized professor. His lectures are clear and he provides ample opportunities for students to ask questions and participate. He is also very accessible during office hours and provides helpful feedback on assignments."
+      }
+    ]
+  }
