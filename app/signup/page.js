@@ -1,10 +1,13 @@
 // 'use client'
 
-// import { TextField, Box, Button, AppBar, Toolbar, Typography } from "@mui/material";
-// import { useState } from "react";
+// import { TextField, Box, Button, AppBar, Toolbar, Typography, IconButton } from "@mui/material";
+// import { useState, useContext } from "react";
 // import { useRouter } from 'next/navigation';
 // import { auth } from '../../firebase';
 // import { createUserWithEmailAndPassword } from "firebase/auth";
+// import Brightness4Icon from '@mui/icons-material/Brightness4';
+// import Brightness7Icon from '@mui/icons-material/Brightness7';
+// import { ThemeContext } from '../ThemeContext';
 
 // export default function SignUp() {
 //   const router = useRouter();
@@ -13,10 +16,12 @@
 //   const [password, setPassword] = useState('');
 //   const [error, setError] = useState('');
 
+//   const { mode, toggleTheme } = useContext(ThemeContext);
+
 //   const handleSignUp = async () => {
 //     try {
 //       await createUserWithEmailAndPassword(auth, email, password);
-//       router.push('/');  // Redirect to home page after sign up
+//       router.push('/ai-rmp');  // Redirect to chatbot page after sign up
 //     } catch (error) {
 //       setError(error.message);
 //     }
@@ -28,6 +33,10 @@
 //       height="100vh"
 //       display="flex"
 //       flexDirection="column"
+//       sx={{
+//         bgcolor: mode === 'dark' ? 'background.default' : 'background.paper',
+//         color: mode === 'dark' ? 'text.primary' : 'text.secondary',
+//       }}
 //     >
 //       {/* Navbar */}
 //       <AppBar position="static">
@@ -35,7 +44,10 @@
 //           <Typography variant="h6" sx={{ flexGrow: 1 }}>
 //             Rate My Professor AI Assistant
 //           </Typography>
-//           <Button color="inherit" onClick={() => router.push('/')}>
+//           <IconButton sx={{ ml: 1 }} onClick={toggleTheme} color="inherit">
+//             {mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
+//           </IconButton>
+//           <Button color="inherit" onClick={() => router.push('/home')}>
 //             Home
 //           </Button>
 //           <Button color="inherit" onClick={() => router.push('/login')}>
@@ -55,8 +67,13 @@
 //         <Box
 //           width="400px"
 //           p={4}
-//           border="1px solid black"
+//           border="1px solid"
+//           borderColor={mode === 'dark' ? 'text.primary' : 'text.secondary'}
 //           borderRadius={8}
+//           sx={{
+//             bgcolor: mode === 'dark' ? 'background.paper' : 'background.default',
+//             color: mode === 'dark' ? 'text.primary' : 'text.secondary',
+//           }}
 //         >
 //           <Typography variant="h5" mb={2}>
 //             Sign Up
@@ -67,6 +84,7 @@
 //             margin="normal"
 //             value={name}
 //             onChange={(e) => setName(e.target.value)}
+//             sx={{ input: { color: mode === 'dark' ? 'text.primary' : 'text.secondary' } }}
 //           />
 //           <TextField
 //             label="Email"
@@ -74,6 +92,7 @@
 //             margin="normal"
 //             value={email}
 //             onChange={(e) => setEmail(e.target.value)}
+//             sx={{ input: { color: mode === 'dark' ? 'text.primary' : 'text.secondary' } }}
 //           />
 //           <TextField
 //             label="Password"
@@ -82,6 +101,7 @@
 //             margin="normal"
 //             value={password}
 //             onChange={(e) => setPassword(e.target.value)}
+//             sx={{ input: { color: mode === 'dark' ? 'text.primary' : 'text.secondary' } }}
 //           />
 //           {error && <Typography color="error">{error}</Typography>}
 //           <Button variant="contained" fullWidth onClick={handleSignUp} sx={{ mt: 3 }}>
@@ -93,13 +113,17 @@
 //   );
 // }
 
+
 'use client'
 
-import { TextField, Box, Button, AppBar, Toolbar, Typography } from "@mui/material";
-import { useState } from "react";
+import { TextField, Box, Button, AppBar, Toolbar, Typography, IconButton } from "@mui/material";
+import { useState, useContext } from "react";
 import { useRouter } from 'next/navigation';
 import { auth } from '../../firebase';
 import { createUserWithEmailAndPassword } from "firebase/auth";
+import Brightness4Icon from '@mui/icons-material/Brightness4';
+import Brightness7Icon from '@mui/icons-material/Brightness7';
+import { ThemeContext } from '../ThemeContext';
 
 export default function SignUp() {
   const router = useRouter();
@@ -107,6 +131,8 @@ export default function SignUp() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+
+  const { mode, toggleTheme } = useContext(ThemeContext);
 
   const handleSignUp = async () => {
     try {
@@ -123,6 +149,10 @@ export default function SignUp() {
       height="100vh"
       display="flex"
       flexDirection="column"
+      sx={{
+        bgcolor: mode === 'dark' ? 'background.default' : 'background.paper',
+        color: mode === 'dark' ? 'text.primary' : 'text.secondary',
+      }}
     >
       {/* Navbar */}
       <AppBar position="static">
@@ -130,6 +160,9 @@ export default function SignUp() {
           <Typography variant="h6" sx={{ flexGrow: 1 }}>
             Rate My Professor AI Assistant
           </Typography>
+          <IconButton sx={{ ml: 1 }} onClick={toggleTheme} color="inherit">
+            {mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
+          </IconButton>
           <Button color="inherit" onClick={() => router.push('/home')}>
             Home
           </Button>
@@ -146,14 +179,34 @@ export default function SignUp() {
         justifyContent="center"
         alignItems="center"
         p={3}
+        sx={{
+          px: {
+            xs: 2, // Padding for small screens
+            sm: 3, // Padding for medium screens and up
+          },
+        }}
       >
         <Box
-          width="400px"
+          width={{
+            xs: '100%',  // Full width on small screens
+            sm: '80%',   // 80% width on medium screens
+            md: '400px'  // Fixed width on large screens
+          }}
           p={4}
-          border="1px solid black"
+          border="1px solid"
+          borderColor={mode === 'dark' ? 'text.primary' : 'text.secondary'}
           borderRadius={8}
+          sx={{
+            bgcolor: mode === 'dark' ? 'background.paper' : 'background.default',
+            color: mode === 'dark' ? 'text.primary' : 'text.secondary',
+          }}
         >
-          <Typography variant="h5" mb={2}>
+          <Typography variant="h5" mb={2} sx={{
+            fontSize: {
+              xs: '1.5rem', // Smaller font on mobile
+              sm: '2rem'   // Larger font on larger screens
+            },
+          }}>
             Sign Up
           </Typography>
           <TextField
@@ -162,6 +215,9 @@ export default function SignUp() {
             margin="normal"
             value={name}
             onChange={(e) => setName(e.target.value)}
+            sx={{
+              input: { color: mode === 'dark' ? 'text.primary' : 'text.secondary' },
+            }}
           />
           <TextField
             label="Email"
@@ -169,6 +225,9 @@ export default function SignUp() {
             margin="normal"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            sx={{
+              input: { color: mode === 'dark' ? 'text.primary' : 'text.secondary' },
+            }}
           />
           <TextField
             label="Password"
@@ -177,9 +236,23 @@ export default function SignUp() {
             margin="normal"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            sx={{
+              input: { color: mode === 'dark' ? 'text.primary' : 'text.secondary' },
+            }}
           />
           {error && <Typography color="error">{error}</Typography>}
-          <Button variant="contained" fullWidth onClick={handleSignUp} sx={{ mt: 3 }}>
+          <Button 
+            variant="contained" 
+            fullWidth 
+            onClick={handleSignUp} 
+            sx={{ 
+              mt: 3,
+              fontSize: {
+                xs: '1rem', // Smaller font on mobile
+                sm: '1.25rem' // Larger font on larger screens
+              },
+            }}
+          >
             Sign Up
           </Button>
         </Box>

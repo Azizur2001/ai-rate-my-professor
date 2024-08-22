@@ -1,13 +1,17 @@
 // 'use client'
 
-// import { TextField, Box, Button, Stack, AppBar, Toolbar, Typography } from "@mui/material";
+// import { TextField, Box, Button, Stack, AppBar, Toolbar, Typography, IconButton } from "@mui/material";
 // import { useRouter } from 'next/navigation';
-// import { useState, useEffect } from "react";
+// import { useState, useEffect, useContext } from "react";
 // import { auth } from '../../firebase';  // Adjust the path as needed
 // import { onAuthStateChanged, signOut } from "firebase/auth";
+// import Brightness4Icon from '@mui/icons-material/Brightness4';
+// import Brightness7Icon from '@mui/icons-material/Brightness7';
+// import { ThemeContext } from '../ThemeContext';
 
 // export default function AiRmp() {
 //   const router = useRouter();
+//   const { mode, toggleTheme } = useContext(ThemeContext);
 //   const [messages, setMessages] = useState([
 //     {
 //       role: "assistant",
@@ -77,6 +81,10 @@
 //       height="100vh"
 //       display="flex"
 //       flexDirection="column"
+//       sx={{
+//         bgcolor: mode === 'dark' ? 'background.default' : 'background.paper',
+//         color: mode === 'dark' ? 'text.primary' : 'text.secondary',
+//       }}
 //     >
 //       {/* Navbar */}
 //       <AppBar position="static">
@@ -84,6 +92,9 @@
 //           <Typography variant="h6" sx={{ flexGrow: 1 }}>
 //             Rate My Professor AI Assistant
 //           </Typography>
+//           <IconButton sx={{ ml: 1 }} onClick={toggleTheme} color="inherit">
+//             {mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
+//           </IconButton>
 //           <Button color="inherit" onClick={() => router.push('/home')}>
 //             Home
 //           </Button>
@@ -105,9 +116,14 @@
 //           direction="column" 
 //           width="500px" 
 //           height="500px" 
-//           border="1px solid black" 
+//           border="1px solid"
+//           borderColor={mode === 'dark' ? 'text.primary' : 'text.secondary'}
 //           p={2} 
 //           spacing={3}
+//           sx={{
+//             bgcolor: mode === 'dark' ? 'background.paper' : 'background.default',
+//             color: mode === 'dark' ? 'text.primary' : 'text.secondary',
+//           }}
 //         >
 //           <Stack 
 //             direction="column" 
@@ -143,6 +159,7 @@
 //               onChange={(e) => {
 //                 setMessage(e.target.value)
 //               }}
+//               sx={{ input: { color: mode === 'dark' ? 'text.primary' : 'text.secondary' } }}
 //             />
 //             <Button variant='contained' onClick={sendMessage}>
 //               Send
@@ -268,11 +285,24 @@ export default function AiRmp() {
         justifyContent="center"
         alignItems="center"
         p={3}
+        sx={{
+          flexDirection: {
+            xs: 'column', // Stack vertically on small screens
+            md: 'row', // Align items side-by-side on medium and up screens
+          }
+        }}
       >
         <Stack 
           direction="column" 
-          width="500px" 
-          height="500px" 
+          width={{
+            xs: '100%', // Full width on small screens
+            sm: '80%',  // 80% width on small screens
+            md: '500px', // Fixed width on medium screens and up
+          }}
+          height={{
+            xs: 'auto', // Auto height on small screens
+            md: '500px', // Fixed height on medium screens and up
+          }}
           border="1px solid"
           borderColor={mode === 'dark' ? 'text.primary' : 'text.secondary'}
           p={2} 
@@ -301,7 +331,14 @@ export default function AiRmp() {
                 }
                 color="white"
                 borderRadius={16}
-                p={3}
+                p={2}
+                sx={{
+                  maxWidth: {
+                    xs: '100%', // Full width on small screens
+                    sm: '75%', // 75% width on medium screens
+                    md: '60%', // 60% width on large screens
+                  }
+                }}
                 >
                   {message.content}
                 </Box>
@@ -316,9 +353,20 @@ export default function AiRmp() {
               onChange={(e) => {
                 setMessage(e.target.value)
               }}
-              sx={{ input: { color: mode === 'dark' ? 'text.primary' : 'text.secondary' } }}
+              sx={{
+                input: { color: mode === 'dark' ? 'text.primary' : 'text.secondary' },
+              }}
             />
-            <Button variant='contained' onClick={sendMessage}>
+            <Button 
+              variant='contained' 
+              onClick={sendMessage}
+              sx={{
+                width: {
+                  xs: '100%', // Full width button on small screens
+                  sm: 'auto', // Auto width on larger screens
+                }
+              }}
+            >
               Send
             </Button>
           </Stack>
