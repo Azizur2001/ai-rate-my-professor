@@ -224,8 +224,9 @@ export default function Home() {
             },
           }}
         >
-          New Feature: Our latest enhancement allows users to filter professors based on keywords like "Knowledgeable," "Engaging," and more. This advanced filtering helps you find the perfect match by honing in on specific teaching qualities that matter to you.
+          New Feature: Our latest enhancement allows users to filter professors based on keywords like &quot;Knowledgeable,&quot; &quot;Engaging,&quot; and more. This advanced filtering helps you find the perfect match by honing in on specific teaching qualities that matter to you.
         </Typography>
+
       </Box>
 
       {/* Divider between sections */}
