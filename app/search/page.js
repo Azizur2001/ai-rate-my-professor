@@ -299,15 +299,6 @@ export default function SearchPage() {
             />
           </Grid>
           <Grid item xs={12} md={4}>
-            <FormControlLabel
-              control={
-                <Checkbox
-                  checked={discussionBased}
-                  onChange={(e) => setDiscussionBased(e.target.checked)}
-                />
-              }
-              label="Discussion-Based Teaching"
-            />
           </Grid>
         </Grid>
 
