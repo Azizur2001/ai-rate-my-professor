@@ -125,6 +125,132 @@
         "subject": "Biochemistry",
         "stars": 4,
         "review": "Dr. Patel is a knowledgeable and organized professor. His lectures are clear and he provides ample opportunities for students to ask questions and participate. He is also very accessible during office hours and provides helpful feedback on assignments."
-      }
+      },
+      {
+        "professor": "Dr. Emily Thompson",
+        "subject": "Computer Science",
+        "stars": 5,
+        "review": "Dr. Thompson is an exceptional professor. Her deep understanding of the subject combined with her engaging teaching style makes her classes both informative and enjoyable. She is also very approachable during office hours."
+      },
+      {
+        "professor": "Professor William Green",
+        "subject": "Economics",
+        "stars": 4,
+        "review": "Professor Green provides clear and concise explanations of complex economic theories. His lectures are well-structured, and he encourages class participation. However, the course load can be heavy at times."
+      },
+      {
+        "professor": "Dr. Angela Davis",
+        "subject": "Biology",
+        "stars": 5,
+        "review": "Dr. Davis is a brilliant professor with a passion for biology. She presents the material in a way that is easy to understand, and her labs are well-organized and highly educational. She is always available to help students."
+      },
+      {
+        "professor": "Professor Richard Brown",
+        "subject": "History",
+        "stars": 3,
+        "review": "Professor Brown is knowledgeable, but his lectures can be monotonous at times. The material is interesting, but he could benefit from incorporating more interactive elements into his teaching."
+      },
+      {
+        "professor": "Dr. Laura Williams",
+        "subject": "Psychology",
+        "stars": 4,
+        "review": "Dr. Williams is a dedicated professor who is deeply committed to her students' success. Her lectures are insightful, and she fosters a collaborative learning environment. The only downside is that the exams can be quite challenging."
+      },
+      {
+        "professor": "Professor James Wilson",
+        "subject": "Mathematics",
+        "stars": 4,
+        "review": "Professor Wilson is a great teacher who makes complex math concepts accessible to students. He uses real-world examples to illustrate abstract ideas, making them easier to grasp. However, the pace of the class can be fast."
+      },
+      {
+        "professor": "Dr. Hannah Lee",
+        "subject": "Political Science",
+        "stars": 5,
+        "review": "Dr. Lee is an inspiring professor who brings political science to life. Her lectures are thought-provoking, and she encourages students to engage in meaningful discussions. She is always available for one-on-one help."
+      },
+      {
+        "professor": "Professor Michael White",
+        "subject": "Engineering",
+        "stars": 3,
+        "review": "Professor White is knowledgeable, but his teaching style can be a bit dry. The course material is challenging, and he expects a lot from his students. However, he is willing to provide extra help if needed."
+      },
+      {
+        "professor": "Dr. Rebecca Adams",
+        "subject": "Sociology",
+        "stars": 4,
+        "review": "Dr. Adams is an engaging professor who encourages students to think critically about societal issues. Her lectures are well-organized, and she creates a supportive environment for class discussions. The reading load can be heavy, though."
+      },
+      {
+        "professor": "Professor Samuel Johnson",
+        "subject": "Business",
+        "stars": 4,
+        "review": "Professor Johnson is a highly experienced instructor who brings real-world examples into his lectures. His classes are practical and informative, but the workload can be intense, especially during midterms."
+      },
+      {
+        "professor": "Dr. Monica Taylor",
+        "subject": "Art History",
+        "stars": 5,
+        "review": "Dr. Taylor is an outstanding art history professor. Her lectures are visually stunning, and she has a unique ability to make the subject matter come alive. She is passionate about art and encourages students to explore their creativity."
+      },
+      {
+        "professor": "Professor George King",
+        "subject": "Physics",
+        "stars": 4,
+        "review": "Professor King is a dedicated teacher who makes physics accessible to all students. He uses demonstrations to explain complex concepts, and he is always willing to help students during office hours. The exams can be tough, though."
+      },
+      {
+        "professor": "Dr. Maria Johnson",
+        "subject": "Italian Language",
+        "stars": 5,
+        "review": "Dr. Johnson is an excellent language instructor who makes learning Italian fun and interactive. Her classes are well-structured, and she provides plenty of opportunities for practice. She is very supportive of her students."
+      },
+      {
+        "professor": "Professor Daniel Thomas",
+        "subject": "Computer Engineering",
+        "stars": 3,
+        "review": "Professor Thomas is knowledgeable, but his teaching style can be a bit rigid. The coursework is challenging, and he expects students to be self-motivated. He is available for help, but students need to be proactive in seeking it."
+      },
+      {
+        "professor": "Dr. Linda Martinez",
+        "subject": "Environmental Science",
+        "stars": 4,
+        "review": "Dr. Martinez is passionate about environmental science, and her enthusiasm is contagious. Her lectures are informative, and she encourages students to think critically about environmental issues. The class involves a lot of group work, which can be both good and bad."
+      },
+      {
+        "professor": "Professor Anthony Rivera",
+        "subject": "Finance",
+        "stars": 4,
+        "review": "Professor Rivera is a knowledgeable finance instructor who explains complex concepts clearly. His lectures are practical, and he provides real-world examples to illustrate key points. The course is challenging, but manageable with effort."
+      },
+      {
+        "professor": "Dr. Jennifer Parker",
+        "subject": "Neuroscience",
+        "stars": 5,
+        "review": "Dr. Parker is a brilliant neuroscience professor. Her lectures are detailed and informative, and she has a knack for explaining complex topics in a way that is easy to understand. She is very supportive of her students."
+      },
+      {
+        "professor": "Professor Andrew Carter",
+        "subject": "Civil Engineering",
+        "stars": 3,
+        "review": "Professor Carter is knowledgeable, but his lectures can be a bit dry. The material is difficult, and he expects a lot from his students. However, he is willing to help those who put in the effort."
+      },
+      {
+        "professor": "Dr. Caroline Hughes",
+        "subject": "Linguistics",
+        "stars": 4,
+        "review": "Dr. Hughes is a passionate and engaging linguistics professor. Her lectures are thought-provoking, and she encourages students to participate in discussions. The coursework is challenging, but she provides helpful feedback."
+      },
+      {
+        "professor": "Professor Henry Wright",
+        "subject": "Spanish Language",
+        "stars": 5,
+        "review": "Professor Wright is an exceptional Spanish instructor. His classes are immersive and interactive, and he creates a supportive environment for learning. He is patient, encouraging, and genuinely cares about his students' progress."
+      },
+      {
+        "professor": "Dr. Victoria Lee",
+        "subject": "Biochemistry",
+        "stars": 4,
+        "review": "Dr. Lee is a knowledgeable and organized biochemistry professor. Her lectures are clear and concise, and she provides ample opportunities for students to ask questions. The exams are difficult, but she offers plenty of resources for success."
+      }      
     ]
   }
