@@ -9,6 +9,7 @@ import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
 import { ThemeContext } from '../ThemeContext';
 import Image from 'next/image';  // Import Image component from Next.js
+import { useTheme } from "@mui/material/styles"; // Import useTheme
 
 export default function SignUp() {
   const router = useRouter();
@@ -18,6 +19,7 @@ export default function SignUp() {
   const [error, setError] = useState('');
 
   const { mode, toggleTheme } = useContext(ThemeContext);
+  const theme = useTheme(); // Retrieve the theme
 
   const handleSignUp = async () => {
     try {
@@ -35,8 +37,8 @@ export default function SignUp() {
       display="flex"
       flexDirection="column"
       sx={{
-        bgcolor: mode === 'dark' ? 'background.default' : 'background.paper',
-        color: mode === 'dark' ? 'text.primary' : 'text.secondary',
+        bgcolor: theme.palette.background.default,
+        color: theme.palette.text.primary,
       }}
     >
       {/* Navbar */}
@@ -77,6 +79,7 @@ export default function SignUp() {
             xs: 2, // Padding for small screens
             sm: 3, // Padding for medium screens and up
           },
+          backgroundColor: theme.palette.background.default,  // Use theme for background
         }}
       >
         <Box
@@ -87,11 +90,12 @@ export default function SignUp() {
           }}
           p={4}
           border="1px solid"
-          borderColor={mode === 'dark' ? 'text.primary' : 'text.secondary'}
+          borderColor={theme.palette.divider}
           borderRadius={8}
+          boxShadow={3}  // Adding box-shadow for a modern look
           sx={{
-            bgcolor: mode === 'dark' ? 'background.paper' : 'background.default',
-            color: mode === 'dark' ? 'text.primary' : 'text.secondary',
+            bgcolor: theme.palette.background.paper,
+            color: theme.palette.text.primary,
           }}
         >
           <Typography variant="h5" mb={2} sx={{
@@ -99,6 +103,8 @@ export default function SignUp() {
               xs: '1.5rem', // Smaller font on mobile
               sm: '2rem'   // Larger font on larger screens
             },
+            fontWeight: 'bold',  // Bold the title
+            textAlign: 'center',  // Center align the title
           }}>
             Sign Up
           </Typography>
@@ -109,7 +115,24 @@ export default function SignUp() {
             value={name}
             onChange={(e) => setName(e.target.value)}
             sx={{
-              input: { color: mode === 'dark' ? 'text.primary' : 'text.secondary' },
+              input: { 
+                color: theme.palette.text.primary, 
+                backgroundColor: theme.palette.background.default, 
+              },
+              label: {
+                color: theme.palette.text.secondary,
+              },
+              '& .MuiOutlinedInput-root': {
+                '& fieldset': {
+                  borderColor: theme.palette.divider,
+                },
+                '&:hover fieldset': {
+                  borderColor: theme.palette.text.primary,
+                },
+                '&.Mui-focused fieldset': {
+                  borderColor: theme.palette.primary.main,
+                },
+              },
             }}
           />
           <TextField
@@ -119,7 +142,24 @@ export default function SignUp() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             sx={{
-              input: { color: mode === 'dark' ? 'text.primary' : 'text.secondary' },
+              input: { 
+                color: theme.palette.text.primary, 
+                backgroundColor: theme.palette.background.default, 
+              },
+              label: {
+                color: theme.palette.text.secondary,
+              },
+              '& .MuiOutlinedInput-root': {
+                '& fieldset': {
+                  borderColor: theme.palette.divider,
+                },
+                '&:hover fieldset': {
+                  borderColor: theme.palette.text.primary,
+                },
+                '&.Mui-focused fieldset': {
+                  borderColor: theme.palette.primary.main,
+                },
+              },
             }}
           />
           <TextField
@@ -130,10 +170,27 @@ export default function SignUp() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             sx={{
-              input: { color: mode === 'dark' ? 'text.primary' : 'text.secondary' },
+              input: { 
+                color: theme.palette.text.primary, 
+                backgroundColor: theme.palette.background.default, 
+              },
+              label: {
+                color: theme.palette.text.secondary,
+              },
+              '& .MuiOutlinedInput-root': {
+                '& fieldset': {
+                  borderColor: theme.palette.divider,
+                },
+                '&:hover fieldset': {
+                  borderColor: theme.palette.text.primary,
+                },
+                '&.Mui-focused fieldset': {
+                  borderColor: theme.palette.primary.main,
+                },
+              },
             }}
           />
-          {error && <Typography color="error">{error}</Typography>}
+          {error && <Typography color="error" sx={{ mt: 2 }}>{error}</Typography>}
           <Button 
             variant="contained" 
             fullWidth 
@@ -144,10 +201,28 @@ export default function SignUp() {
                 xs: '1rem', // Smaller font on mobile
                 sm: '1.25rem' // Larger font on larger screens
               },
+              padding: '10px 20px',  // Adjust button padding
+              backgroundColor: theme.palette.primary.main,
+              color: '#fff',
+              '&:hover': {
+                backgroundColor: theme.palette.primary.dark,
+              }
             }}
           >
             Sign Up
           </Button>
+          <Typography mt={2} textAlign="center">
+            Already have an account?{" "}
+            <Button
+              onClick={() => router.push('/login')}
+              sx={{
+                textTransform: 'none', // Remove uppercase transformation
+                color: theme.palette.primary.main,
+              }}
+            >
+              Log In
+            </Button>
+          </Typography>
         </Box>
       </Box>
     </Box>

@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import {
   Box,
@@ -8,6 +8,7 @@ import {
   Toolbar,
   IconButton,
   useTheme,
+  Divider, // Import Divider component from MUI
 } from "@mui/material";
 import { useRouter } from "next/navigation";
 import { useContext, useEffect, useState } from "react";
@@ -91,13 +92,12 @@ export default function Home() {
       {/* Hero Section */}
       <Box
         id="hero-section"
-        minHeight="100vh"
+        minHeight="80vh" // Reduced minHeight for less whitespace
         display="flex"
         flexDirection="column"
         justifyContent="center"
         alignItems="center"
         textAlign="center"
-        px={3}
         sx={{
           backgroundColor: theme.palette.background.paper,
           color: theme.palette.text.primary,
@@ -151,16 +151,18 @@ export default function Home() {
         </Button>
       </Box>
 
+      {/* Divider between sections */}
+      <Divider variant="middle" sx={{ my: 4, borderColor: theme.palette.divider }} />
+
       {/* Features Section */}
       <Box
         id="features-section"
-        minHeight="100vh"
+        minHeight="80vh" // Reduced minHeight for less whitespace
         display="flex"
         flexDirection="column"
         justifyContent="center"
         alignItems="center"
         textAlign="center"
-        px={3}
         sx={{
           backgroundColor: theme.palette.background.default,
           color: theme.palette.text.primary,
@@ -211,18 +213,33 @@ export default function Home() {
         >
           Seamlessly interact with a system that learns from your queries, providing more accurate results over time.
         </Typography>
+        <Typography
+          variant="body1"
+          paragraph
+          maxWidth="600px"
+          sx={{
+            fontSize: {
+              xs: "1rem", // Smaller font on mobile
+              sm: "1.25rem", // Larger font on tablets and up
+            },
+          }}
+        >
+          New Feature: Our latest enhancement allows users to filter professors based on keywords like "Knowledgeable," "Engaging," and more. This advanced filtering helps you find the perfect match by honing in on specific teaching qualities that matter to you.
+        </Typography>
       </Box>
+
+      {/* Divider between sections */}
+      <Divider variant="middle" sx={{ my: 4, borderColor: theme.palette.divider }} />
 
       {/* Call to Action Section */}
       <Box
         id="cta-section"
-        minHeight="100vh"
+        minHeight="60vh" // Reduced minHeight for less whitespace
         display="flex"
         flexDirection="column"
         justifyContent="center"
         alignItems="center"
         textAlign="center"
-        px={3}
         sx={{
           backgroundColor: theme.palette.background.paper,
           color: theme.palette.text.primary,
