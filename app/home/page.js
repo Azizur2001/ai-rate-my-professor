@@ -15,7 +15,7 @@ import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "../ThemeContext";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
-import Image from "next/image";  // Import Image component from Next.js
+import Image from "next/image";  
 
 export default function Home() {
   const router = useRouter();

@@ -65,6 +65,40 @@ export default function SearchPage() {
     }
   };
 
+
+  // const handleSearch = async () => {
+  //   try {
+  //     const searchCriteria = {
+  //       subject,
+  //       minRating: parseInt(minRating) || 0,
+  //       discussionBased,
+  //       keywords: Object.keys(keywords).filter((key) => keywords[key]),
+  //     };
+  
+  //     console.log('Search criteria:', searchCriteria);
+  
+  //     const response = await fetch('/api/search', {
+  //       method: 'POST',
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //       },
+  //       body: JSON.stringify(searchCriteria),
+  //     });
+  
+  //     if (!response.ok) {
+  //       throw new Error('An unexpected error occurred');
+  //     }
+  
+  //     const data = await response.json();
+  //     console.log('Search results:', data.results);
+  //     setResults(data.results);
+  //   } catch (error) {
+  //     console.error('Search error:', error);
+  //     setError(error.message);
+  //   }
+  // };
+  
+
   return (
     <Box
       width="100vw"

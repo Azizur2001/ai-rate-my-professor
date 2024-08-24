@@ -1,256 +1,538 @@
 {
-    "reviews": [
-      {
-        "professor": "Dr. Sarah Johnson",
-        "subject": "Computer Science",
-        "stars": 5,
-        "review": "Dr. Johnson is an amazing professor! She is extremely knowledgeable and passionate about the subject matter. Her lectures are engaging and she is always willing to help students during office hours. Highly recommend this course."
-      },
-      {
-        "professor": "Professor Michael Lee",
-        "subject": "Economics",
-        "stars": 4,
-        "review": "Professor Lee is a fair and reasonable instructor. His lectures can be dry at times, but he is very clear in explaining complex economic concepts. The workload is manageable, and he is accessible during office hours."
-      },
-      {
-        "professor": "Dr. Emily Chen",
-        "subject": "Biology",
-        "stars": 5,
-        "review": "Dr. Chen is an exceptional professor. Her lectures are well-organized and she uses a variety of teaching methods to ensure students understand the material. She is also very responsive to student questions and concerns."
-      },
-      {
-        "professor": "Professor David Gonzalez",
-        "subject": "History",
-        "stars": 3,
-        "review": "Professor Gonzalez is a knowledgeable instructor, but his teaching style can be a bit dry at times. The coursework is fair, and he is willing to work with students who are struggling. Overall, a solid professor."
-      },
-      {
-        "professor": "Dr. Samantha Patel",
-        "subject": "Psychology",
-        "stars": 4,
-        "review": "Dr. Patel is a passionate and engaging professor. Her lectures are thought-provoking and she encourages students to participate in class discussions. She is also very accessible and provides helpful feedback on assignments."
-      },
-      {
-        "professor": "Professor John Smith",
-        "subject": "Mathematics",
-        "stars": 4,
-        "review": "Professor Smith has a deep understanding of the subject matter and is able to explain complex concepts clearly. His lectures are well-structured and he provides ample opportunities for students to ask questions and participate."
-      },
-      {
-        "professor": "Dr. Jessica Nguyen",
-        "subject": "Political Science",
-        "stars": 5,
-        "review": "Dr. Nguyen is an outstanding professor. She is knowledgeable, organized, and passionate about the material. Her lectures are engaging and she encourages critical thinking. I highly recommend taking her courses."
-      },
-      {
-        "professor": "Professor Robert Martinez",
-        "subject": "Engineering",
-        "stars": 3,
-        "review": "While Professor Martinez is knowledgeable in his field, his teaching style can be dry and his expectations for coursework can be unreasonable at times. The material is challenging, but he is willing to work with students who put in the effort."
-      },
-      {
-        "professor": "Dr. Aisha Malik",
-        "subject": "Sociology",
-        "stars": 4,
-        "review": "Dr. Malik is a thoughtful and engaging professor. Her lectures are thought-provoking and she encourages class discussions. She is also very accessible and provides detailed feedback on assignments. I learned a lot in her course."
-      },
-      {
-        "professor": "Professor Ahmed Khalil",
-        "subject": "Business",
-        "stars": 4,
-        "review": "Professor Khalil is a knowledgeable and experienced instructor. His lectures are informative and he provides practical examples to illustrate key concepts. The workload is manageable, and he is responsive to student questions and concerns."
-      },
-      {
-        "professor": "Dr. Olivia Rossi",
-        "subject": "Art History",
-        "stars": 5,
-        "review": "Dr. Rossi is an exceptional professor. Her passion for the subject matter is contagious, and she has a remarkable ability to make complex topics accessible and engaging. Her lectures are visually stunning, and she encourages students to think critically about the material."
-      },
-      {
-        "professor": "Professor Liam Fitzgerald",
-        "subject": "Physics",
-        "stars": 4,
-        "review": "Professor Fitzgerald is a knowledgeable and dedicated instructor. His lectures are well-organized and he uses a variety of teaching methods to help students understand the material. He is also available during office hours to provide additional support."
-      },
-      {
-        "professor": "Dr. Isabella Moretti",
-        "subject": "Italian Language",
-        "stars": 5,
-        "review": "Dr. Moretti is an amazing professor. Her classes are engaging and interactive, and she creates a supportive environment for students to learn and practice the language. She is patient, encouraging, and genuinely cares about her students' progress."
-      },
-      {
-        "professor": "Professor Ethan Nguyen",
-        "subject": "Computer Engineering",
-        "stars": 3,
-        "review": "While Professor Nguyen is knowledgeable in his field, his teaching style can be a bit disorganized at times. The coursework is challenging, and he does not always provide clear guidance or feedback. However, he is willing to work with students who are struggling."
-      },
-      {
-        "professor": "Dr. Sophia Hernandez",
-        "subject": "Environmental Science",
-        "stars": 4,
-        "review": "Dr. Hernandez is a passionate and engaging professor. Her lectures are informative and she encourages students to think critically about environmental issues. She is also very responsive to student needs and provides helpful feedback on assignments."
-      },
-      {
-        "professor": "Professor Luca Ricci",
-        "subject": "Finance",
-        "stars": 4,
-        "review": "Professor Ricci is a knowledgeable and experienced instructor. His lectures are well-structured and he provides practical examples to illustrate key concepts. The workload is manageable, and he is willing to work with students who are struggling with the material."
-      },
-      {
-        "professor": "Dr. Ava Patel",
-        "subject": "Neuroscience",
-        "stars": 5,
-        "review": "Dr. Patel is an exceptional professor. Her lectures are engaging and she has a remarkable ability to explain complex topics in a clear and concise manner. She is also very accessible and provides valuable feedback and support to her students."
-      },
-      {
-        "professor": "Professor Lucas Gonzalez",
-        "subject": "Civil Engineering",
-        "stars": 3,
-        "review": "While Professor Gonzalez is knowledgeable in his field, his teaching style can be dry and his expectations for coursework can be unreasonable at times. The material is challenging, and he does not always provide adequate support or guidance to struggling students."
-      },
-      {
-        "professor": "Dr. Mia Rossi",
-        "subject": "Linguistics",
-        "stars": 4,
-        "review": "Dr. Rossi is a passionate and engaging professor. Her lectures are thought-provoking and she encourages students to participate in discussions. She is also very responsive to student needs and provides detailed feedback on assignments."
-      },
-      {
-        "professor": "Professor Mateo Fernandez",
-        "subject": "Spanish Language",
-        "stars": 5,
-        "review": "Professor Fernandez is an exceptional language instructor. His classes are interactive and dynamic, and he creates a supportive environment for students to learn and practice the language. He is patient, encouraging, and genuinely cares about his students' progress."
-      },
-      {
-        "professor": "Dr. Noah Patel",
-        "subject": "Biochemistry",
-        "stars": 4,
-        "review": "Dr. Patel is a knowledgeable and organized professor. His lectures are clear and he provides ample opportunities for students to ask questions and participate. He is also very accessible during office hours and provides helpful feedback on assignments."
-      },
-      {
-        "professor": "Dr. Emily Thompson",
-        "subject": "Computer Science",
-        "stars": 5,
-        "review": "Dr. Thompson is an exceptional professor. Her deep understanding of the subject combined with her engaging teaching style makes her classes both informative and enjoyable. She is also very approachable during office hours."
-      },
-      {
-        "professor": "Professor William Green",
-        "subject": "Economics",
-        "stars": 4,
-        "review": "Professor Green provides clear and concise explanations of complex economic theories. His lectures are well-structured, and he encourages class participation. However, the course load can be heavy at times."
-      },
-      {
-        "professor": "Dr. Angela Davis",
-        "subject": "Biology",
-        "stars": 5,
-        "review": "Dr. Davis is a brilliant professor with a passion for biology. She presents the material in a way that is easy to understand, and her labs are well-organized and highly educational. She is always available to help students."
-      },
-      {
-        "professor": "Professor Richard Brown",
-        "subject": "History",
-        "stars": 3,
-        "review": "Professor Brown is knowledgeable, but his lectures can be monotonous at times. The material is interesting, but he could benefit from incorporating more interactive elements into his teaching."
-      },
-      {
-        "professor": "Dr. Laura Williams",
-        "subject": "Psychology",
-        "stars": 4,
-        "review": "Dr. Williams is a dedicated professor who is deeply committed to her students' success. Her lectures are insightful, and she fosters a collaborative learning environment. The only downside is that the exams can be quite challenging."
-      },
-      {
-        "professor": "Professor James Wilson",
-        "subject": "Mathematics",
-        "stars": 4,
-        "review": "Professor Wilson is a great teacher who makes complex math concepts accessible to students. He uses real-world examples to illustrate abstract ideas, making them easier to grasp. However, the pace of the class can be fast."
-      },
-      {
-        "professor": "Dr. Hannah Lee",
-        "subject": "Political Science",
-        "stars": 5,
-        "review": "Dr. Lee is an inspiring professor who brings political science to life. Her lectures are thought-provoking, and she encourages students to engage in meaningful discussions. She is always available for one-on-one help."
-      },
-      {
-        "professor": "Professor Michael White",
-        "subject": "Engineering",
-        "stars": 3,
-        "review": "Professor White is knowledgeable, but his teaching style can be a bit dry. The course material is challenging, and he expects a lot from his students. However, he is willing to provide extra help if needed."
-      },
-      {
-        "professor": "Dr. Rebecca Adams",
-        "subject": "Sociology",
-        "stars": 4,
-        "review": "Dr. Adams is an engaging professor who encourages students to think critically about societal issues. Her lectures are well-organized, and she creates a supportive environment for class discussions. The reading load can be heavy, though."
-      },
-      {
-        "professor": "Professor Samuel Johnson",
-        "subject": "Business",
-        "stars": 4,
-        "review": "Professor Johnson is a highly experienced instructor who brings real-world examples into his lectures. His classes are practical and informative, but the workload can be intense, especially during midterms."
-      },
-      {
-        "professor": "Dr. Monica Taylor",
-        "subject": "Art History",
-        "stars": 5,
-        "review": "Dr. Taylor is an outstanding art history professor. Her lectures are visually stunning, and she has a unique ability to make the subject matter come alive. She is passionate about art and encourages students to explore their creativity."
-      },
-      {
-        "professor": "Professor George King",
-        "subject": "Physics",
-        "stars": 4,
-        "review": "Professor King is a dedicated teacher who makes physics accessible to all students. He uses demonstrations to explain complex concepts, and he is always willing to help students during office hours. The exams can be tough, though."
-      },
-      {
-        "professor": "Dr. Maria Johnson",
-        "subject": "Italian Language",
-        "stars": 5,
-        "review": "Dr. Johnson is an excellent language instructor who makes learning Italian fun and interactive. Her classes are well-structured, and she provides plenty of opportunities for practice. She is very supportive of her students."
-      },
-      {
-        "professor": "Professor Daniel Thomas",
-        "subject": "Computer Engineering",
-        "stars": 3,
-        "review": "Professor Thomas is knowledgeable, but his teaching style can be a bit rigid. The coursework is challenging, and he expects students to be self-motivated. He is available for help, but students need to be proactive in seeking it."
-      },
-      {
-        "professor": "Dr. Linda Martinez",
-        "subject": "Environmental Science",
-        "stars": 4,
-        "review": "Dr. Martinez is passionate about environmental science, and her enthusiasm is contagious. Her lectures are informative, and she encourages students to think critically about environmental issues. The class involves a lot of group work, which can be both good and bad."
-      },
-      {
-        "professor": "Professor Anthony Rivera",
-        "subject": "Finance",
-        "stars": 4,
-        "review": "Professor Rivera is a knowledgeable finance instructor who explains complex concepts clearly. His lectures are practical, and he provides real-world examples to illustrate key points. The course is challenging, but manageable with effort."
-      },
-      {
-        "professor": "Dr. Jennifer Parker",
-        "subject": "Neuroscience",
-        "stars": 5,
-        "review": "Dr. Parker is a brilliant neuroscience professor. Her lectures are detailed and informative, and she has a knack for explaining complex topics in a way that is easy to understand. She is very supportive of her students."
-      },
-      {
-        "professor": "Professor Andrew Carter",
-        "subject": "Civil Engineering",
-        "stars": 3,
-        "review": "Professor Carter is knowledgeable, but his lectures can be a bit dry. The material is difficult, and he expects a lot from his students. However, he is willing to help those who put in the effort."
-      },
-      {
-        "professor": "Dr. Caroline Hughes",
-        "subject": "Linguistics",
-        "stars": 4,
-        "review": "Dr. Hughes is a passionate and engaging linguistics professor. Her lectures are thought-provoking, and she encourages students to participate in discussions. The coursework is challenging, but she provides helpful feedback."
-      },
-      {
-        "professor": "Professor Henry Wright",
-        "subject": "Spanish Language",
-        "stars": 5,
-        "review": "Professor Wright is an exceptional Spanish instructor. His classes are immersive and interactive, and he creates a supportive environment for learning. He is patient, encouraging, and genuinely cares about his students' progress."
-      },
-      {
-        "professor": "Dr. Victoria Lee",
-        "subject": "Biochemistry",
-        "stars": 4,
-        "review": "Dr. Lee is a knowledgeable and organized biochemistry professor. Her lectures are clear and concise, and she provides ample opportunities for students to ask questions. The exams are difficult, but she offers plenty of resources for success."
-      }      
-    ]
-  }
+  "reviews": [
+    {
+      "professor": "Dr. Sarah Johnson",
+      "subject": "Computer Science",
+      "stars": 5,
+      "review": "Dr. Johnson is an amazing professor! She is extremely knowledgeable and passionate about the subject matter. Her lectures are engaging and she is always willing to help students during office hours. Highly recommend this course."
+    },
+    {
+      "professor": "Professor Michael Lee",
+      "subject": "Economics",
+      "stars": 4,
+      "review": "Professor Lee is a fair and reasonable instructor. His lectures can be dry at times, but he is very clear in explaining complex economic concepts. The workload is manageable, and he is accessible during office hours."
+    },
+    {
+      "professor": "Dr. Emily Chen",
+      "subject": "Biology",
+      "stars": 5,
+      "review": "Dr. Chen is an exceptional professor. Her lectures are well-organized and she uses a variety of teaching methods to ensure students understand the material. She is also very responsive to student questions and concerns."
+    },
+    {
+      "professor": "Professor David Gonzalez",
+      "subject": "History",
+      "stars": 3,
+      "review": "Professor Gonzalez is a knowledgeable instructor, but his teaching style can be a bit dry at times. The coursework is fair, and he is willing to work with students who are struggling. Overall, a solid professor."
+    },
+    {
+      "professor": "Dr. Samantha Patel",
+      "subject": "Psychology",
+      "stars": 4,
+      "review": "Dr. Patel is a passionate and engaging professor. Her lectures are thought-provoking and she encourages students to participate in class discussions. She is also very accessible and provides helpful feedback on assignments."
+    },
+    {
+      "professor": "Professor John Smith",
+      "subject": "Mathematics",
+      "stars": 4,
+      "review": "Professor Smith has a deep understanding of the subject matter and is able to explain complex concepts clearly. His lectures are well-structured and he provides ample opportunities for students to ask questions and participate."
+    },
+    {
+      "professor": "Dr. Jessica Nguyen",
+      "subject": "Political Science",
+      "stars": 5,
+      "review": "Dr. Nguyen is an outstanding professor. She is knowledgeable, organized, and passionate about the material. Her lectures are engaging and she encourages critical thinking. I highly recommend taking her courses."
+    },
+    {
+      "professor": "Professor Robert Martinez",
+      "subject": "Engineering",
+      "stars": 3,
+      "review": "While Professor Martinez is knowledgeable in his field, his teaching style can be dry and his expectations for coursework can be unreasonable at times. The material is challenging, but he is willing to work with students who put in the effort."
+    },
+    {
+      "professor": "Dr. Aisha Malik",
+      "subject": "Sociology",
+      "stars": 4,
+      "review": "Dr. Malik is a thoughtful and engaging professor. Her lectures are thought-provoking and she encourages class discussions. She is also very accessible and provides detailed feedback on assignments. I learned a lot in her course."
+    },
+    {
+      "professor": "Professor Ahmed Khalil",
+      "subject": "Business",
+      "stars": 4,
+      "review": "Professor Khalil is a knowledgeable and experienced instructor. His lectures are informative and he provides practical examples to illustrate key concepts. The workload is manageable, and he is responsive to student questions and concerns."
+    },
+    {
+      "professor": "Dr. Olivia Rossi",
+      "subject": "Art History",
+      "stars": 5,
+      "review": "Dr. Rossi is an exceptional professor. Her passion for the subject matter is contagious, and she has a remarkable ability to make complex topics accessible and engaging. Her lectures are visually stunning, and she encourages students to think critically about the material."
+    },
+    {
+      "professor": "Professor Liam Fitzgerald",
+      "subject": "Physics",
+      "stars": 4,
+      "review": "Professor Fitzgerald is a knowledgeable and dedicated instructor. His lectures are well-organized and he uses a variety of teaching methods to help students understand the material. He is also available during office hours to provide additional support."
+    },
+    {
+      "professor": "Dr. Isabella Moretti",
+      "subject": "Italian Language",
+      "stars": 5,
+      "review": "Dr. Moretti is an amazing professor. Her classes are engaging and interactive, and she creates a supportive environment for students to learn and practice the language. She is patient, encouraging, and genuinely cares about her students' progress."
+    },
+    {
+      "professor": "Professor Ethan Nguyen",
+      "subject": "Computer Engineering",
+      "stars": 3,
+      "review": "While Professor Nguyen is knowledgeable in his field, his teaching style can be a bit disorganized at times. The coursework is challenging, and he does not always provide clear guidance or feedback. However, he is willing to work with students who are struggling."
+    },
+    {
+      "professor": "Dr. Sophia Hernandez",
+      "subject": "Environmental Science",
+      "stars": 4,
+      "review": "Dr. Hernandez is a passionate and engaging professor. Her lectures are informative and she encourages students to think critically about environmental issues. She is also very responsive to student needs and provides helpful feedback on assignments."
+    },
+    {
+      "professor": "Professor Luca Ricci",
+      "subject": "Finance",
+      "stars": 4,
+      "review": "Professor Ricci is a knowledgeable and experienced instructor. His lectures are well-structured and he provides practical examples to illustrate key concepts. The workload is manageable, and he is willing to work with students who are struggling with the material."
+    },
+    {
+      "professor": "Dr. Ava Patel",
+      "subject": "Neuroscience",
+      "stars": 5,
+      "review": "Dr. Patel is an exceptional professor. Her lectures are engaging and she has a remarkable ability to explain complex topics in a clear and concise manner. She is also very accessible and provides valuable feedback and support to her students."
+    },
+    {
+      "professor": "Professor Lucas Gonzalez",
+      "subject": "Civil Engineering",
+      "stars": 3,
+      "review": "While Professor Gonzalez is knowledgeable in his field, his teaching style can be dry and his expectations for coursework can be unreasonable at times. The material is challenging, and he does not always provide adequate support or guidance to struggling students."
+    },
+    {
+      "professor": "Dr. Mia Rossi",
+      "subject": "Linguistics",
+      "stars": 4,
+      "review": "Dr. Rossi is a passionate and engaging professor. Her lectures are thought-provoking and she encourages students to participate in discussions. She is also very responsive to student needs and provides detailed feedback on assignments."
+    },
+    {
+      "professor": "Professor Mateo Fernandez",
+      "subject": "Spanish Language",
+      "stars": 5,
+      "review": "Professor Fernandez is an exceptional language instructor. His classes are interactive and dynamic, and he creates a supportive environment for students to learn and practice the language. He is patient, encouraging, and genuinely cares about his students' progress."
+    },
+    {
+      "professor": "Dr. Noah Patel",
+      "subject": "Biochemistry",
+      "stars": 4,
+      "review": "Dr. Patel is a knowledgeable and organized professor. His lectures are clear and he provides ample opportunities for students to ask questions and participate. He is also very accessible during office hours and provides helpful feedback on assignments."
+    },
+    {
+      "professor": "Dr. Emily Thompson",
+      "subject": "Computer Science",
+      "stars": 5,
+      "review": "Dr. Thompson is an exceptional professor. Her deep understanding of the subject combined with her engaging teaching style makes her classes both informative and enjoyable. She is also very approachable during office hours."
+    },
+    {
+      "professor": "Professor William Green",
+      "subject": "Economics",
+      "stars": 4,
+      "review": "Professor Green provides clear and concise explanations of complex economic theories. His lectures are well-structured, and he encourages class participation. However, the course load can be heavy at times."
+    },
+    {
+      "professor": "Dr. Angela Davis",
+      "subject": "Biology",
+      "stars": 5,
+      "review": "Dr. Davis is a brilliant professor with a passion for biology. She presents the material in a way that is easy to understand, and her labs are well-organized and highly educational. She is always available to help students."
+    },
+    {
+      "professor": "Professor Richard Brown",
+      "subject": "History",
+      "stars": 3,
+      "review": "Professor Brown is knowledgeable, but his lectures can be monotonous at times. The material is interesting, but he could benefit from incorporating more interactive elements into his teaching."
+    },
+    {
+      "professor": "Dr. Laura Williams",
+      "subject": "Psychology",
+      "stars": 4,
+      "review": "Dr. Williams is a dedicated professor who is deeply committed to her students' success. Her lectures are insightful, and she fosters a collaborative learning environment. The only downside is that the exams can be quite challenging."
+    },
+    {
+      "professor": "Professor James Wilson",
+      "subject": "Mathematics",
+      "stars": 4,
+      "review": "Professor Wilson is a great teacher who makes complex math concepts accessible to students. He uses real-world examples to illustrate abstract ideas, making them easier to grasp. However, the pace of the class can be fast."
+    },
+    {
+      "professor": "Dr. Hannah Lee",
+      "subject": "Political Science",
+      "stars": 5,
+      "review": "Dr. Lee is an inspiring professor who brings political science to life. Her lectures are thought-provoking, and she encourages students to engage in meaningful discussions. She is always available for one-on-one help."
+    },
+    {
+      "professor": "Professor Michael White",
+      "subject": "Engineering",
+      "stars": 3,
+      "review": "Professor White is knowledgeable, but his teaching style can be a bit dry. The course material is challenging, and he expects a lot from his students. However, he is willing to provide extra help if needed."
+    },
+    {
+      "professor": "Dr. Rebecca Adams",
+      "subject": "Sociology",
+      "stars": 4,
+      "review": "Dr. Adams is an engaging professor who encourages students to think critically about societal issues. Her lectures are well-organized, and she creates a supportive environment for class discussions. The reading load can be heavy, though."
+    },
+    {
+      "professor": "Professor Samuel Johnson",
+      "subject": "Business",
+      "stars": 4,
+      "review": "Professor Johnson is a highly experienced instructor who brings real-world examples into his lectures. His classes are practical and informative, but the workload can be intense, especially during midterms."
+    },
+    {
+      "professor": "Dr. Monica Taylor",
+      "subject": "Art History",
+      "stars": 5,
+      "review": "Dr. Taylor is an outstanding art history professor. Her lectures are visually stunning, and she has a unique ability to make the subject matter come alive. She is passionate about art and encourages students to explore their creativity."
+    },
+    {
+      "professor": "Professor George King",
+      "subject": "Physics",
+      "stars": 4,
+      "review": "Professor King is a dedicated teacher who makes physics accessible to all students. He uses demonstrations to explain complex concepts, and he is always willing to help students during office hours. The exams can be tough, though."
+    },
+    {
+      "professor": "Dr. Maria Johnson",
+      "subject": "Italian Language",
+      "stars": 5,
+      "review": "Dr. Johnson is an excellent language instructor who makes learning Italian fun and interactive. Her classes are well-structured, and she provides plenty of opportunities for practice. She is very supportive of her students."
+    },
+    {
+      "professor": "Professor Daniel Thomas",
+      "subject": "Computer Engineering",
+      "stars": 3,
+      "review": "Professor Thomas is knowledgeable, but his teaching style can be a bit rigid. The coursework is challenging, and he expects students to be self-motivated. He is available for help, but students need to be proactive in seeking it."
+    },
+    {
+      "professor": "Dr. Linda Martinez",
+      "subject": "Environmental Science",
+      "stars": 4,
+      "review": "Dr. Martinez is passionate about environmental science, and her enthusiasm is contagious. Her lectures are informative, and she encourages students to think critically about environmental issues. The class involves a lot of group work, which can be both good and bad."
+    },
+    {
+      "professor": "Professor Anthony Rivera",
+      "subject": "Finance",
+      "stars": 4,
+      "review": "Professor Rivera is a knowledgeable finance instructor who explains complex concepts clearly. His lectures are practical, and he provides real-world examples to illustrate key points. The course is challenging, but manageable with effort."
+    },
+    {
+      "professor": "Dr. Jennifer Parker",
+      "subject": "Neuroscience",
+      "stars": 5,
+      "review": "Dr. Parker is a brilliant neuroscience professor. Her lectures are detailed and informative, and she has a knack for explaining complex topics in a way that is easy to understand. She is very supportive of her students."
+    },
+    {
+      "professor": "Professor Andrew Carter",
+      "subject": "Civil Engineering",
+      "stars": 3,
+      "review": "Professor Carter is knowledgeable, but his lectures can be a bit dry. The material is difficult, and he expects a lot from his students. However, he is willing to help those who put in the effort."
+    },
+    {
+      "professor": "Dr. Caroline Hughes",
+      "subject": "Linguistics",
+      "stars": 4,
+      "review": "Dr. Hughes is a passionate and engaging linguistics professor. Her lectures are thought-provoking, and she encourages students to participate in discussions. The coursework is challenging, but she provides helpful feedback."
+    },
+    {
+      "professor": "Professor Henry Wright",
+      "subject": "Spanish Language",
+      "stars": 5,
+      "review": "Professor Wright is an exceptional Spanish instructor. His classes are immersive and interactive, and he creates a supportive environment for learning. He is patient, encouraging, and genuinely cares about his students' progress."
+    },
+    {
+      "professor": "Dr. Victoria Lee",
+      "subject": "Biochemistry",
+      "stars": 4,
+      "review": "Dr. Lee is a knowledgeable and organized biochemistry professor. Her lectures are clear and concise, and she provides ample opportunities for students to ask questions. The exams are difficult, but she offers plenty of resources for success."
+    },
+    {
+      "professor": "Anne",
+      "subject": "CSCI316",
+      "stars": 5,
+      "review": "unorganized and dropped a lot the last 2 weeks. canceled our 2nd test and made our final longer; gave us a project that she said she would break up (and didn't). assigned another portion of the final because it would take too long (took me 3 hours). Then she didn't even grade the project and gave us grades. goes on tangents, and lectures are boring"
+    },
+    {
+      "professor": "Jerry",
+      "subject": "CS211",
+      "stars": 5,
+      "review": "SPRING 2024: The midterm was straightforward, with many getting 100+. The final was harder, yet still doable and both midterm and final were curved with a godly curve of sqrt*10. Thus, it is effectively impossible to fail the course, if you give even half effort. Free projects, Waxman will spoonfeed code. Pay attention and take good notes for exam."
+    },
+    {
+      "professor": "Xinying",
+      "subject": "Computer Science",
+      "stars": 5,
+      "review": "She is a very good explainer. She'll try her best to make you understand the topic you're unable to. She records her class and shares it online with classsnotes included. If you review and pratice enough you should be able to get a good grade."
+    },
+    {
+      "professor": "Anne Smith-Thompson",
+      "subject": "CS340",
+      "stars": null,
+      "review": "Make sure you listen a LOT to what professor says in class. She will test you heavily on what she goes over more frequently in class. Then, read the textbook chapter of the specific topic you went over in class. Go to office hours and ask specific questions on what to go over before a test, and go over topics you struggle with in office hours."
+    },
+    {
+      "professor": "Anne Smith-Thompson",
+      "subject": "CS340",
+      "stars": null,
+      "review": "cuny should be doing quality check of professors, she does not know out of the other than what she has taught, and i get lost from where she is teaching boring, jumping every context, self study does not work with her. the most bizzare thing is you can get easily get out of focus what she is teaching in class."
+    },
+    {
+      "professor": "Anne Smith-Thompson",
+      "subject": "CS340",
+      "stars": 4,
+      "review": "While she does go on tangents a lot, it usually relates to the material. You will likely have to learn from the textbook though. Her exams are definitely not too hard if you put in the work. She can be kind of harsh grading the programming assignments though. She is generally nice but can be a bit mean if the class didnt do well on the exam."
+    },
+    {
+      "professor": "Anne Smith-Thompson",
+      "subject": "CSXXX",
+      "stars": null,
+      "review": "Professor Anne was ok, I didnt really learn much and she never showed up to class however she is very nice and even though I failed half the quizzes hard, she told us what would be on the final and the final itself was a copy paste of the quizzes with a curve and I got a 95 on the final somehow. I ended up with a B, Easy to pass but wont learn."
+    },
+    {
+      "professor": "Anne Smith-Thompson",
+      "subject": "CSCI316",
+      "stars": 5,
+      "review": "Prof. Anne may take weeks and wait last minute to grade assignments but overall she teaches a lot of demanding classes and does a good job at going over lectures. While she tends to cancel classes a lot causing some memory retention issues she does give a decent review and clear exam topics to study."
+    },
+    {
+      "professor": "Anne Smith-Thompson",
+      "subject": "CSXXX",
+      "stars": null,
+      "review": "Prof. Smith is kind, caring, fair, responds quickly to emails, and teaches well. Make sure you're comfortable with Java if taking 313 (review labs & old projects). If you show up to class, PARTICIPATE, do all assignments, and study, you'll pass. Grade consisted of quizzes, 3 part Java project, final, and zybooks hw."
+    },
+    {
+      "professor": "Anne Smith-Thompson",
+      "subject": "CSXXX",
+      "stars": 5,
+      "review": "Anne does go off topic but not as frequently as many say. Class is very chaotic and she'll frequently cancel class at the last minute. Takes FOREVER to post grades for anything. Doesn't respond to emails and generally seems very apathetic towards the class. Perfect representation of the CS department for a joke of an institution like QC."
+    },
+    {
+      "professor": "Anne Smith-Thompson",
+      "subject": "CS340",
+      "stars": 5,
+      "review": "HORRIBLE. Took her for 343 last semester and now taking her for 340. Exams are not fair. Her lectures just consist of her going over zybooks and telling useless stories. Good luck to anyone taking her in the future."
+    },
+    {
+      "professor": "Saeed Zakeri",
+      "subject": "MATH202",
+      "stars": 5,
+      "review": "I took him for Linear Algebra online (math 231) during pandemic. And now got to take him in person. OH MY GOD, he's somehow even better in person. Math 202 is vector calculus and I don't think he'll teach it again for a while but if he does and ur considering, trust me take him. Even if its for MATH 201 or 151 or 152, or honestly any other class."
+    },
+    {
+      "professor": "Saeed Zakeri",
+      "subject": "MATH152",
+      "stars": 5,
+      "review": "His notes can be a mixed bag. Sometimes they are great, other times they are completely useless to what is going to be asked on the test/homework. The textbook is also not the best at times so it can become difficult to grasp certain problems/concepts. His reviews are not good as some topics won't even appear on the test itself. He is ok."
+    },
+    {
+      "professor": "Saeed Zakeri",
+      "subject": "MATH202",
+      "stars": 5,
+      "review": "Without a doubt, Zakeri was the greatest lecturer and the best professor that I ever had for a single math class before. He has a gift of being able to simplify the most difficult concepts for everyone, and you can tell that he puts in a lot of effort into his lectures that feel like live TED Talks. If you want to learn AND do well, take him. GOAT"
+    },
+    {
+      "professor": "Saeed Zakeri",
+      "subject": "MATH152",
+      "stars": null,
+      "review": "Amazing professor and amazing person. Very humble and never speaks down to anyone. Engaging and inspiring lectures. He really knows how to teach math and it shows. He breaks everything down and his notes are excellent, very clear and concise. Exams are fair and HW is plentiful in order to practice what's taught in class. Study hard and ask Q's."
+    },
+    {
+      "professor": "Saeed Zakeri",
+      "subject": "MATH231",
+      "stars": 5,
+      "review": "He is a fair grader. He curved in the moment. I took him for math 231 and 201 in a same time. He curved his both classes. His lectures were clear and explains everything very well."
+    },
+    {
+      "professor": "Anne Smith-Thompson",
+      "subject": "CS340",
+      "stars": 0,
+      "review": "Took her for a 4-week summer session, and had her both as a lecture professor AND lab.\nUnironically, one of the best professors I ever had. She was extremely nice/kind/caring and understanding. Gives a lot of hw but it's worth it. Tons of extra credits. Every topic she mentioned was on the exam. I obviously can't speak for others but she was great."
+    },
+    {
+      "professor": "Saeed Zakeri",
+      "subject": "MATH152",
+      "stars": 5,
+      "review": "don't miss class, his notes are crucial for the tests. they are so beyond perfect. he moves from one topic to the next so gracefully. curved the final grades generously for us to succeed. his reviews are his exams just different numbers. the final was the hardest but study kernel and range when you get to it!! he encourages questions so ask them!!"
+    },
+    {
+      "professor": "Saeed Zakeri",
+      "subject": "MATH202",
+      "stars": 5,
+      "review": "Without a doubt, Zakeri was the greatest lecturer and the best professor that I ever had for a single math class before. He has a gift of being able to simplify the most difficult concepts for everyone, and you can tell that he puts in a lot of effort into his lectures that feel like live TED Talks. If you want to learn AND do well, take him. GOAT"
+    },
+    {
+      "professor": "Saeed Zakeri",
+      "subject": "MATH202",
+      "stars": 5,
+      "review": "I took him for Linear Algebra online (math 231) during pandemic. And now got to take him in person. OH MY GOD, he's somehow even better in person. Math 202 is vector calculus and I don't think he'll teach it again for a while but if he does and ur considering, trust me take him. Even if its for MATH 201 or 151 or 152, or honestly any other class."
+    },
+    {
+      "professor": "Saeed Zakeri",
+      "subject": "MATH231",
+      "stars": 5,
+      "review": "He is an OK professor. Definitely not all that like these other reviews are saying. That being said he is an amazing lecturer and makes most if not all of the calculus 2 concepts easy to understand. Yes, his exams are similar to the review sheet, HOWEVER, he gives little to no partial credit (at least to me). Best math professor QC has."
+    },
+    {
+      "professor": "Simina Fluture",
+      "subject": "340",
+      "stars": 0,
+      "review": "one of the hardest teachers at QC. she does not GAF, she will just keep going. I liked her though because she was available at office hours, but she is super harsh sometimes, and her tests are brutal (her curve is like 5 points too). don't take if you want an easy A because it won't happen. but the curve at the end of the semester slaps like crazy."
+    },
+    {
+      "professor": "Simina Fluture",
+      "subject": "CSCI340",
+      "stars": 0,
+      "review": "She is most terrible prof i ever had in my LIFE!!!. SHE was giving attitude to students that she will not repeat what she said while few students didn't understand what she said in her thick accent. IDK why she still a prof. SHE IS NOT HELPFUL AT ALL. SHE DOES NOT CARE HOW HARD u try she will regardless fail u if u don't get grades."
+    },
+    {
+      "professor": "Simina Fluture",
+      "subject": "CSCI343",
+      "stars": 4,
+      "review": "Took her in the spring for 340 and had to drop it. Thought she was bad, when it was really on me. Having 343 in the summer gave me more time to focus. The first half was more difficult than the second. Do the extra credit, it helps your understanding and your grade. She also tells you exactly what will be on the exams. That helped me ace the final."
+    },
+    {
+      "professor": "Simina Fluture",
+      "subject": "CS343",
+      "stars": 0,
+      "review": "i basically lost my job because of her, and my future. hope she gets her karma back one day"
+    },
+    {
+      "professor": "Simina Fluture",
+      "subject": "CS340",
+      "stars": 0,
+      "review": "Prof, give my money back. You don't deserve a single cent from anyone. Instead, you should be paying students for registering for your class. You should be ashamed of yourself for ruining students' futures, time, and money. If you have even the smallest amount of morality, quit your job and release all the CS students from this torment."
+    },
+    {
+      "professor": "Simina Fluture",
+      "subject": "340",
+      "stars": 0,
+      "review": "Professor Fluture's teaching approach is deeply problematic and detrimental to students' learning. Her demeaning behavior, including calling students slow, stupid, or screw-ups, creates a hostile environment that undermines confidence and discourages learning. Do not take if you do not have a strong background in CS."
+    },
+    {
+      "professor": "Simina Fluture",
+      "subject": "CSCI343",
+      "stars": 5,
+      "review": "You get what you put in.  I emailed her almost daily asking random questions and by midterm she knew me and definitely graded my exam less harshly. \n\nFinal was price of cake.  She is better option than others for 340 but I wouldn't rdcommend taking this class in summer"
+    },
+    {
+      "professor": "Simina Fluture",
+      "subject": "CS343",
+      "stars": 0,
+      "review": "i basically lost my job because of her, and my future. hope she gets her karma back one day"
+    },
+    {
+      "professor": "Simina Fluture",
+      "subject": "CS340",
+      "stars": 5,
+      "review": "No future with Fluture!!!"
+    },
+    {
+      "professor": "Simina Fluture",
+      "subject": "CS340",
+      "stars": 0,
+      "review": "She is awesome"
+    },
+    {
+      "professor": "Simina Fluture",
+      "subject": "CSCI343",
+      "stars": 4,
+      "review": "Took her in the spring for 340 and had to drop it. Thought she was bad, when it was really on me. Having 343 in the summer gave me more time to focus. The first half was more difficult than the second. Do the extra credit, it helps your understanding and your grade. She also tells you exactly what will be on the exams. That helped me ace the final."
+    },
+    {
+      "professor": "Simina Fluture",
+      "subject": "CSCI343",
+      "stars": "N/A",
+      "review": "Dr. F is awesome"
+    },
+    {
+      "professor": "Simina Fluture",
+      "subject": "CSCI343",
+      "stars": "N/A",
+      "review": "Awesome instructor.  Better than others"
+    },
+    {
+      "professor": "Simina Fluture",
+      "subject": "CSCI343",
+      "stars": "N/A",
+      "review": "Dr. F is awesome"
+    },
+    {
+      "professor": "Anne Smith-Thompson",
+      "subject": "CSXXX",
+      "stars": 5,
+      "review": "Anne does go off topic but not as frequently as many say. Class is very chaotic and she'll frequently cancel class at the last minute. Takes FOREVER to post grades for anything. Doesn't respond to emails and generally seems very apathetic towards the class. Perfect representation of the CS department for a joke of an institution like QC."
+    },
+    {
+      "professor": "Anne Smith-Thompson",
+      "subject": "CS340",
+      "stars": null,
+      "review": "She was sick most of my semester and emailed a few hours before class to cancel. Sometimes no email. She was out for 1 month. After she got back, the pace of the class picked up a lot. It was difficult to follow along in the class because she gears off to stories. Old lectures on bb it was easier to follow. Tests = all passed quizzes."
+    },
+    {
+      "professor": "Anne Smith-Thompson",
+      "subject": "CSXXX",
+      "stars": null,
+      "review": "Prof. Smith is kind, caring, fair, responds quickly to emails, and teaches well. Make sure you're comfortable with Java if taking 313 (review labs & old projects). If you show up to class, PARTICIPATE, do all assignments, and study, you'll pass. Grade consisted of quizzes, 3 part Java project, final, and zybooks hw."
+    },
+    {
+      "professor": "Anne Smith-Thompson",
+      "subject": "CS340",
+      "stars": null,
+      "review": "She was sick most of my semester and emailed a few hours before class to cancel. Sometimes no email. She was out for 1 month. After she got back, the pace of the class picked up a lot. It was difficult to follow along in the class because she gears off to stories. Old lectures on bb it was easier to follow. Tests = all passed quizzes."
+    },
+    {
+      "professor": "Simina Fluture",
+      "subject": "CSCI343",
+      "stars": null,
+      "review": "She is awesome"
+    },
+    {
+      "professor": "Simina Fluture",
+      "subject": "CSCI343",
+      "stars": 5,
+      "review": "I took 340course during the summer session. The workload was heavy,with 2 quizzes, 2 projects,and a final. Many students, including myself, found it challenging to keep up, and nearly 50% of the class dropped after the 1 mid.Her teaching style wasn't very engaging, as her voice tended to be monotonic, and her accent made it hard to follow at times"
+    },
+    {
+      "professor": "Simina Fluture",
+      "subject": "CSCI343",
+      "stars": null,
+      "review": "She is most terrible prof i ever had in my LIFE!!!. SHE was giving attitude to students that she will not repeat what she said while few students didn't understand what she said in her thick accent. IDK why she still a prof. SHE IS NOT HELPFUL AT ALL. SHE DOES NOT CARE HOW HARD u try she will regardless fail u if u don't get grades."
+    },
+    {
+      "professor": "Simina Fluture",
+      "subject": "CSCI343",
+      "stars": null,
+      "review": "i basically lost my job because of her, and my future. hope she gets her karma back one day"
+    },
+    {
+      "professor": "Simina Fluture",
+      "subject": "CSCI343",
+      "stars": 5,
+      "review": "I took 340course during the summer session. The workload was heavy,with 2 quizzes, 2 projects,and a final. Many students, including myself, found it challenging to keep up, and nearly 50% of the class dropped after the 1 mid.Her teaching style wasn't very engaging, as her voice tended to be monotonic, and her accent made it hard to follow at times"
+    },
+    {
+      "professor": "Simina Fluture",
+      "subject": "CSCI343",
+      "stars": 5,
+      "review": "The exams were quite difficult, and I felt that the teaching did not adequately prepare us for them. Additionally, she seemed unapproachable and sometimes rude.When students asked questions, she would occasionally respond harshly, which made it uncomfortable to seek help.Overall,I wouldn't recommend this professor. Don't waste your time and money"
+    },
+    {
+      "professor": "Simina Fluture",
+      "subject": "CSCI343",
+      "stars": null,
+      "review": "Prof, give my money back. You don't deserve a single cent from anyone. Instead, you should be paying students for registering for your class. You should be ashamed of yourself for ruining students' futures, time, and money. If you have even the smallest amount of morality, quit your job and release all the CS students from this torment."
+    },
+    {
+      "professor": "Simina Fluture",
+      "subject": "CSCI343",
+      "stars": null,
+      "review": "If you're considering taking a summer course with Dr. Fluture, think twice. It's true what they say: \"no future with Fluture.\" Her summer session is incredibly difficult, with no room for adjustment. She expects you to learn six months' worth of material in one month, and while it is an accelerated course, she does not make it any easier."
+    }
+  ]
+}

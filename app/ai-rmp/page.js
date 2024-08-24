@@ -10,6 +10,15 @@ import Brightness7Icon from '@mui/icons-material/Brightness7';
 import { ThemeContext } from '../ThemeContext';
 import Image from "next/image";  // Import Image component from Next.js
 
+const isValidUrl = (string) => {
+  try {
+    new URL(string);
+    return true;
+  } catch (_) {
+    return false;  
+  }
+};
+
 export default function AiRmp() {
   const router = useRouter();
   const { mode, toggleTheme } = useContext(ThemeContext);
@@ -34,41 +43,80 @@ export default function AiRmp() {
 
   const sendMessage = async () => {
     setMessages((messages) => [
-      ...messages,
-      { role: "user", content: message },
-      { role: "assistant", content: '' }
+        ...messages,
+        { role: "user", content: message },
     ]);
 
     setMessage('');
-    const response = fetch('/api/chat', {
-      method: "POST",
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify([...messages, { role: 'user', content: message }]),
-    }).then(async (res) => {
-      const reader = res.body.getReader();
-      const decoder = new TextDecoder();
 
-      let result = '';
-      return reader.read().then(function processText({ done, value }) {
-        if (done) {
-          return result;
+    if (isValidUrl(message)) {
+        try {
+            const res = await fetch(`/api/scrape?url=${encodeURIComponent(message)}`, {
+                method: 'GET'  // Ensure it's a GET request
+            });
+            const data = await res.json();
+
+            if (data.error) {
+                setMessages((messages) => [
+                    ...messages,
+                    { role: "assistant", content: 'Sorry, I couldn’t fetch the data.' },
+                ]);
+            } else {
+                const content = `
+                    <div><strong>Professor Name:</strong> ${data.name}</div>
+                    <div><strong>Subject:</strong> ${data.subject}</div>
+                    <div><strong>Rating:</strong> ${data.rating} Stars</div>
+                    <div><strong>Review:</strong> ${data.review}</div>
+                `;
+                setMessages((messages) => [
+                    ...messages,
+                    { role: "assistant", content },
+                ]);
+            }
+        } catch (error) {
+            setMessages((messages) => [
+                ...messages,
+                { role: "assistant", content: 'An error occurred while fetching the data.' },
+            ]);
         }
-        const text = decoder.decode(value || new Uint8Array(), { stream: true });
-        setMessages((messages) => {
-          let lastMessage = messages[messages.length - 1];
-          let otherMessages = messages.slice(0, messages.length - 1);
-          return [
-            ...otherMessages,
-            { ...lastMessage, content: lastMessage.content + text },
-          ];
-        });
+    } else {
+        // Handle normal chatbot interaction
+        try {
+            const response = await fetch('/api/chat', {
+                method: "POST",
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify([...messages, { role: 'user', content: message }]),
+            });
 
-        return reader.read().then(processText);
-      });
-    });
-  };
+            const reader = response.body.getReader();
+            const decoder = new TextDecoder();
+
+            let aiMessage = '';
+            const processText = async ({ done, value }) => {
+                if (done) {
+                    setMessages((messages) => [
+                        ...messages,
+                        { role: "assistant", content: aiMessage },
+                    ]);
+                    return aiMessage;
+                }
+
+                aiMessage += decoder.decode(value || new Uint8Array(), { stream: true });
+
+                return reader.read().then(processText);
+            };
+
+            await reader.read().then(processText);
+        } catch (error) {
+            setMessages((messages) => [
+                ...messages,
+                { role: "assistant", content: 'An error occurred while fetching the data.' },
+            ]);
+        }
+    }
+};
 
   const handleLogout = () => {
     signOut(auth).then(() => {
@@ -189,9 +237,8 @@ export default function AiRmp() {
                     },
                     boxShadow: 3, // Adding shadow to message boxes
                   }}
-                >
-                  {message.content}
-                </Box>
+                  dangerouslySetInnerHTML={{ __html: message.content }}  // Render HTML content
+                />
               </Box>
             ))}
           </Stack>
