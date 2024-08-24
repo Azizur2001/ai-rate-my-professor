@@ -413,6 +413,12 @@
       "subject": "CSCI343",
       "stars": null,
       "review": "She is awesome"
+    },
+    {
+      "professor": "Simina Fluture",
+      "subject": "CSCI343",
+      "stars": null,
+      "review": "She is awesome"
     }
   ]
 }
