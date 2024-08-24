@@ -343,208 +343,10 @@
       "review": "Amazing professor and amazing person. Very humble and never speaks down to anyone. Engaging and inspiring lectures. He really knows how to teach math and it shows. He breaks everything down and his notes are excellent, very clear and concise. Exams are fair and HW is plentiful in order to practice what's taught in class. Study hard and ask Q's."
     },
     {
-      "professor": "Saeed Zakeri",
-      "subject": "MATH231",
-      "stars": 5,
-      "review": "He is a fair grader. He curved in the moment. I took him for math 231 and 201 in a same time. He curved his both classes. His lectures were clear and explains everything very well."
-    },
-    {
       "professor": "Anne Smith-Thompson",
-      "subject": "CS340",
-      "stars": 0,
-      "review": "Took her for a 4-week summer session, and had her both as a lecture professor AND lab.\nUnironically, one of the best professors I ever had. She was extremely nice/kind/caring and understanding. Gives a lot of hw but it's worth it. Tons of extra credits. Every topic she mentioned was on the exam. I obviously can't speak for others but she was great."
-    },
-    {
-      "professor": "Saeed Zakeri",
-      "subject": "MATH152",
+      "subject": "CSCI316",
       "stars": 5,
-      "review": "don't miss class, his notes are crucial for the tests. they are so beyond perfect. he moves from one topic to the next so gracefully. curved the final grades generously for us to succeed. his reviews are his exams just different numbers. the final was the hardest but study kernel and range when you get to it!! he encourages questions so ask them!!"
-    },
-    {
-      "professor": "Saeed Zakeri",
-      "subject": "MATH202",
-      "stars": 5,
-      "review": "Without a doubt, Zakeri was the greatest lecturer and the best professor that I ever had for a single math class before. He has a gift of being able to simplify the most difficult concepts for everyone, and you can tell that he puts in a lot of effort into his lectures that feel like live TED Talks. If you want to learn AND do well, take him. GOAT"
-    },
-    {
-      "professor": "Saeed Zakeri",
-      "subject": "MATH202",
-      "stars": 5,
-      "review": "I took him for Linear Algebra online (math 231) during pandemic. And now got to take him in person. OH MY GOD, he's somehow even better in person. Math 202 is vector calculus and I don't think he'll teach it again for a while but if he does and ur considering, trust me take him. Even if its for MATH 201 or 151 or 152, or honestly any other class."
-    },
-    {
-      "professor": "Saeed Zakeri",
-      "subject": "MATH231",
-      "stars": 5,
-      "review": "He is an OK professor. Definitely not all that like these other reviews are saying. That being said he is an amazing lecturer and makes most if not all of the calculus 2 concepts easy to understand. Yes, his exams are similar to the review sheet, HOWEVER, he gives little to no partial credit (at least to me). Best math professor QC has."
-    },
-    {
-      "professor": "Simina Fluture",
-      "subject": "340",
-      "stars": 0,
-      "review": "one of the hardest teachers at QC. she does not GAF, she will just keep going. I liked her though because she was available at office hours, but she is super harsh sometimes, and her tests are brutal (her curve is like 5 points too). don't take if you want an easy A because it won't happen. but the curve at the end of the semester slaps like crazy."
-    },
-    {
-      "professor": "Simina Fluture",
-      "subject": "CSCI340",
-      "stars": 0,
-      "review": "She is most terrible prof i ever had in my LIFE!!!. SHE was giving attitude to students that she will not repeat what she said while few students didn't understand what she said in her thick accent. IDK why she still a prof. SHE IS NOT HELPFUL AT ALL. SHE DOES NOT CARE HOW HARD u try she will regardless fail u if u don't get grades."
-    },
-    {
-      "professor": "Simina Fluture",
-      "subject": "CSCI343",
-      "stars": 4,
-      "review": "Took her in the spring for 340 and had to drop it. Thought she was bad, when it was really on me. Having 343 in the summer gave me more time to focus. The first half was more difficult than the second. Do the extra credit, it helps your understanding and your grade. She also tells you exactly what will be on the exams. That helped me ace the final."
-    },
-    {
-      "professor": "Simina Fluture",
-      "subject": "CS343",
-      "stars": 0,
-      "review": "i basically lost my job because of her, and my future. hope she gets her karma back one day"
-    },
-    {
-      "professor": "Simina Fluture",
-      "subject": "CS340",
-      "stars": 0,
-      "review": "Prof, give my money back. You don't deserve a single cent from anyone. Instead, you should be paying students for registering for your class. You should be ashamed of yourself for ruining students' futures, time, and money. If you have even the smallest amount of morality, quit your job and release all the CS students from this torment."
-    },
-    {
-      "professor": "Simina Fluture",
-      "subject": "340",
-      "stars": 0,
-      "review": "Professor Fluture's teaching approach is deeply problematic and detrimental to students' learning. Her demeaning behavior, including calling students slow, stupid, or screw-ups, creates a hostile environment that undermines confidence and discourages learning. Do not take if you do not have a strong background in CS."
-    },
-    {
-      "professor": "Simina Fluture",
-      "subject": "CSCI343",
-      "stars": 5,
-      "review": "You get what you put in.  I emailed her almost daily asking random questions and by midterm she knew me and definitely graded my exam less harshly. \n\nFinal was price of cake.  She is better option than others for 340 but I wouldn't rdcommend taking this class in summer"
-    },
-    {
-      "professor": "Simina Fluture",
-      "subject": "CS343",
-      "stars": 0,
-      "review": "i basically lost my job because of her, and my future. hope she gets her karma back one day"
-    },
-    {
-      "professor": "Simina Fluture",
-      "subject": "CS340",
-      "stars": 5,
-      "review": "No future with Fluture!!!"
-    },
-    {
-      "professor": "Simina Fluture",
-      "subject": "CS340",
-      "stars": 0,
-      "review": "She is awesome"
-    },
-    {
-      "professor": "Simina Fluture",
-      "subject": "CSCI343",
-      "stars": 4,
-      "review": "Took her in the spring for 340 and had to drop it. Thought she was bad, when it was really on me. Having 343 in the summer gave me more time to focus. The first half was more difficult than the second. Do the extra credit, it helps your understanding and your grade. She also tells you exactly what will be on the exams. That helped me ace the final."
-    },
-    {
-      "professor": "Simina Fluture",
-      "subject": "CSCI343",
-      "stars": "N/A",
-      "review": "Dr. F is awesome"
-    },
-    {
-      "professor": "Simina Fluture",
-      "subject": "CSCI343",
-      "stars": "N/A",
-      "review": "Awesome instructor.  Better than others"
-    },
-    {
-      "professor": "Simina Fluture",
-      "subject": "CSCI343",
-      "stars": "N/A",
-      "review": "Dr. F is awesome"
-    },
-    {
-      "professor": "Anne Smith-Thompson",
-      "subject": "CSXXX",
-      "stars": 5,
-      "review": "Anne does go off topic but not as frequently as many say. Class is very chaotic and she'll frequently cancel class at the last minute. Takes FOREVER to post grades for anything. Doesn't respond to emails and generally seems very apathetic towards the class. Perfect representation of the CS department for a joke of an institution like QC."
-    },
-    {
-      "professor": "Anne Smith-Thompson",
-      "subject": "CS340",
-      "stars": null,
-      "review": "She was sick most of my semester and emailed a few hours before class to cancel. Sometimes no email. She was out for 1 month. After she got back, the pace of the class picked up a lot. It was difficult to follow along in the class because she gears off to stories. Old lectures on bb it was easier to follow. Tests = all passed quizzes."
-    },
-    {
-      "professor": "Anne Smith-Thompson",
-      "subject": "CSXXX",
-      "stars": null,
-      "review": "Prof. Smith is kind, caring, fair, responds quickly to emails, and teaches well. Make sure you're comfortable with Java if taking 313 (review labs & old projects). If you show up to class, PARTICIPATE, do all assignments, and study, you'll pass. Grade consisted of quizzes, 3 part Java project, final, and zybooks hw."
-    },
-    {
-      "professor": "Anne Smith-Thompson",
-      "subject": "CS340",
-      "stars": null,
-      "review": "She was sick most of my semester and emailed a few hours before class to cancel. Sometimes no email. She was out for 1 month. After she got back, the pace of the class picked up a lot. It was difficult to follow along in the class because she gears off to stories. Old lectures on bb it was easier to follow. Tests = all passed quizzes."
-    },
-    {
-      "professor": "Simina Fluture",
-      "subject": "CSCI343",
-      "stars": null,
-      "review": "She is awesome"
-    },
-    {
-      "professor": "Simina Fluture",
-      "subject": "CSCI343",
-      "stars": 5,
-      "review": "I took 340course during the summer session. The workload was heavy,with 2 quizzes, 2 projects,and a final. Many students, including myself, found it challenging to keep up, and nearly 50% of the class dropped after the 1 mid.Her teaching style wasn't very engaging, as her voice tended to be monotonic, and her accent made it hard to follow at times"
-    },
-    {
-      "professor": "Simina Fluture",
-      "subject": "CSCI343",
-      "stars": null,
-      "review": "She is most terrible prof i ever had in my LIFE!!!. SHE was giving attitude to students that she will not repeat what she said while few students didn't understand what she said in her thick accent. IDK why she still a prof. SHE IS NOT HELPFUL AT ALL. SHE DOES NOT CARE HOW HARD u try she will regardless fail u if u don't get grades."
-    },
-    {
-      "professor": "Simina Fluture",
-      "subject": "CSCI343",
-      "stars": null,
-      "review": "i basically lost my job because of her, and my future. hope she gets her karma back one day"
-    },
-    {
-      "professor": "Simina Fluture",
-      "subject": "CSCI343",
-      "stars": 5,
-      "review": "I took 340course during the summer session. The workload was heavy,with 2 quizzes, 2 projects,and a final. Many students, including myself, found it challenging to keep up, and nearly 50% of the class dropped after the 1 mid.Her teaching style wasn't very engaging, as her voice tended to be monotonic, and her accent made it hard to follow at times"
-    },
-    {
-      "professor": "Simina Fluture",
-      "subject": "CSCI343",
-      "stars": 5,
-      "review": "The exams were quite difficult, and I felt that the teaching did not adequately prepare us for them. Additionally, she seemed unapproachable and sometimes rude.When students asked questions, she would occasionally respond harshly, which made it uncomfortable to seek help.Overall,I wouldn't recommend this professor. Don't waste your time and money"
-    },
-    {
-      "professor": "Simina Fluture",
-      "subject": "CSCI343",
-      "stars": null,
-      "review": "Prof, give my money back. You don't deserve a single cent from anyone. Instead, you should be paying students for registering for your class. You should be ashamed of yourself for ruining students' futures, time, and money. If you have even the smallest amount of morality, quit your job and release all the CS students from this torment."
-    },
-    {
-      "professor": "Simina Fluture",
-      "subject": "CSCI343",
-      "stars": null,
-      "review": "If you're considering taking a summer course with Dr. Fluture, think twice. It's true what they say: \"no future with Fluture.\" Her summer session is incredibly difficult, with no room for adjustment. She expects you to learn six months' worth of material in one month, and while it is an accelerated course, she does not make it any easier."
-    },
-    {
-      "professor": "Simina Fluture",
-      "subject": "CSCI343",
-      "stars": 5,
-      "review": "340 done now on to Fall.  Enjoy august break everyone"
-    },
-    {
-      "professor": "Simina Fluture",
-      "subject": "CSCI343",
-      "stars": null,
-      "review": "If you're considering taking a summer course with Dr. Fluture, think twice. It's true what they say: \"no future with Fluture.\" Her summer session is incredibly difficult, with no room for adjustment. She expects you to learn six months' worth of material in one month, and while it is an accelerated course, she does not make it any easier."
+      "review": "This professor is great! One of the best at QC. \nShe's a sweet professor and I learned a lot from her. Other students like to complain but that's probably because they aren't actually listening.\nShe's knowledgeable. I truly hope she continues to teach because she's an actual gem."
     },
     {
       "professor": "Simina Fluture",
@@ -562,31 +364,13 @@
       "professor": "Simina Fluture",
       "subject": "CSCI343",
       "stars": null,
-      "review": "i basically lost my job because of her, and my future. hope she gets her karma back one day"
+      "review": "Prof, give my money back. You don't deserve a single cent from anyone. Instead, you should be paying students for registering for your class. You should be ashamed of yourself for ruining students' futures, time, and money. If you have even the smallest amount of morality, quit your job and release all the CS students from this torment."
     },
     {
       "professor": "Simina Fluture",
       "subject": "CSCI343",
       "stars": 5,
-      "review": "Amazing Lecture."
-    },
-    {
-      "professor": "Simina Fluture",
-      "subject": "CSCI343",
-      "stars": 4,
-      "review": "Took her in the spring for 340 and had to drop it. Thought she was bad, when it was really on me. Having 343 in the summer gave me more time to focus. The first half was more difficult than the second. Do the extra credit, it helps your understanding and your grade. She also tells you exactly what will be on the exams. That helped me ace the final."
-    },
-    {
-      "professor": "Simina Fluture",
-      "subject": "CSCI343",
-      "stars": 1,
-      "review": "All the possitive comments are written by her. Do not fall it."
-    },
-    {
-      "professor": "Simina Fluture",
-      "subject": "CSCI343",
-      "stars": 1,
-      "review": "Professor Fluture's teaching approach is deeply problematic and detrimental to students' learning. Her demeaning behavior, including calling students slow, stupid, or screw-ups, creates a hostile environment that undermines confidence and discourages learning. Do not take if you do not have a strong background in CS."
+      "review": "I took 340course during the summer session. The workload was heavy,with 2 quizzes, 2 projects,and a final. Many students, including myself, found it challenging to keep up, and nearly 50% of the class dropped after the 1 mid.Her teaching style wasn't very engaging, as her voice tended to be monotonic, and her accent made it hard to follow at times"
     }
   ]
 }

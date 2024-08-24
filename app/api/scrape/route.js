@@ -75,95 +75,8 @@
 // }
 
 
-// import axios from 'axios';
-// import * as cheerio from 'cheerio';
-// import { promises as fs } from 'fs';
-// import path from 'path';
-
-// export async function GET(req) {
-//     const url = req.nextUrl.searchParams.get('url');
-
-//     if (!url) {
-//         return new Response(JSON.stringify({ error: 'No URL provided' }), { status: 400 });
-//     }
-
-//     try {
-//         const { data } = await axios.get(url, {
-//             headers: {
-//                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3',
-//                 'Accept-Language': 'en-US,en;q=0.9',
-//                 'Referer': 'https://www.ratemyprofessors.com/',
-//                 'DNT': '1',  // Do Not Track
-//                 'Connection': 'keep-alive',
-//                 'Cache-Control': 'max-age=0',
-//                 'Upgrade-Insecure-Requests': '1'
-//             }
-//         });
-//         const $ = cheerio.load(data);
-
-//         // Scrape professor's first and last name
-//         const firstName = $('div.NameTitle__Name-dowf0z-0.cfjPUG span:first-of-type').text().trim();
-//         const lastName = $('span.NameTitle__LastNameWrapper-dowf0z-2').text().trim();
-//         const professorName = `${firstName} ${lastName}`;
-
-//         // Scrape all reviews for this professor
-//         const reviews = $('div.Comments__StyledComments-dzzyvm-0.gRjWel').map((i, element) => {
-//             return $(element).text().trim();
-//         }).get();
-
-//         // Scrape ratings associated with each review by looking for "Quality" headers
-//         const ratings = [];
-//         $('div.CardNumRating__CardNumRatingHeader-sc-17t4b9u-1.fVETNc').each((i, element) => {
-//             const qualityLabel = $(element).text().trim();
-//             if (qualityLabel === "Quality") {
-//                 const ratingElement = $(element).next('div.CardNumRating__CardNumRatingNumber-sc-17t4b9u-2.gcFhmN');
-//                 const rating = ratingElement.text().trim();
-//                 if (rating) {
-//                     ratings.push(rating);
-//                 }
-//             }
-//         });
-
-//         // Scrape the subject
-//         const subject = $('div.RatingHeader__StyledClass-sc-1dlkqw1-3.eXfReS').first().text().trim();
-
-//         if (!professorName || reviews.length === 0 || ratings.length === 0 || !subject) {
-//             throw new Error('Failed to scrape all necessary data.');
-//         }
-
-//         // Randomly select one review
-//         const randomIndex = Math.floor(Math.random() * reviews.length);
-//         const selectedReview = reviews[randomIndex];
-//         const selectedRating = ratings[randomIndex];
-
-//         // Save this review to the database (or JSON file)
-//         const filePath = path.join(process.cwd(), 'reviews.json');
-//         const fileContent = await fs.readFile(filePath, 'utf-8');
-//         const reviewsData = JSON.parse(fileContent);
-
-//         reviewsData.reviews.push({
-//             professor: professorName,
-//             subject: subject,
-//             stars: parseFloat(selectedRating),
-//             review: selectedReview
-//         });
-
-//         await fs.writeFile(filePath, JSON.stringify(reviewsData, null, 2));
-
-//         return new Response(JSON.stringify({ 
-//             name: professorName, 
-//             rating: selectedRating, 
-//             review: selectedReview,
-//             subject: subject 
-//         }), { status: 200 });
-//     } catch (error) {
-//         console.error(`Error: ${error.message}`);
-//         return new Response(JSON.stringify({ error: `Failed to scrape and save the data: ${error.message}` }), { status: 500 });
-//     }
-// }
-
-
-const puppeteer = require('puppeteer');
+import axios from 'axios';
+import * as cheerio from 'cheerio';
 import { promises as fs } from 'fs';
 import path from 'path';
 
@@ -174,45 +87,49 @@ export async function GET(req) {
         return new Response(JSON.stringify({ error: 'No URL provided' }), { status: 400 });
     }
 
-    let browser;
     try {
-        browser = await puppeteer.launch({
-            headless: true,
-            args: ['--no-sandbox', '--disable-setuid-sandbox'],
-        });
+        const apiKey = process.env.SCRAPER_API_KEY;
+        const scraperUrl = `http://api.scraperapi.com?api_key=${apiKey}&url=${encodeURIComponent(url)}`;
 
-        const page = await browser.newPage();
-        await page.goto(url, { waitUntil: 'networkidle2' });
+        const { data } = await axios.get(scraperUrl);
+        const $ = cheerio.load(data);
 
         // Scrape professor's first and last name
-        const firstName = await page.$eval('div.NameTitle__Name-dowf0z-0.cfjPUG span:first-of-type', el => el.textContent.trim());
-        const lastName = await page.$eval('span.NameTitle__LastNameWrapper-dowf0z-2', el => el.textContent.trim());
+        const firstName = $('div.NameTitle__Name-dowf0z-0.cfjPUG span:first-of-type').text().trim();
+        const lastName = $('span.NameTitle__LastNameWrapper-dowf0z-2').text().trim();
         const professorName = `${firstName} ${lastName}`;
 
         // Scrape all reviews for this professor
-        const reviews = await page.$$eval('div.Comments__StyledComments-dzzyvm-0.gRjWel', els => els.map(el => el.textContent.trim()));
+        const reviews = $('div.Comments__StyledComments-dzzyvm-0.gRjWel').map((i, element) => {
+            return $(element).text().trim();
+        }).get();
 
-        // Scrape ratings associated with each review
-        const ratings = await page.$$eval('div.CardNumRating__CardNumRatingHeader-sc-17t4b9u-1.fVETNc', els => {
-            return els.map(el => {
-                if (el.textContent.trim() === "Quality") {
-                    return el.nextElementSibling ? el.nextElementSibling.textContent.trim() : null;
+        // Scrape ratings associated with each review by looking for "Quality" headers
+        const ratings = [];
+        $('div.CardNumRating__CardNumRatingHeader-sc-17t4b9u-1.fVETNc').each((i, element) => {
+            const qualityLabel = $(element).text().trim();
+            if (qualityLabel === "Quality") {
+                const ratingElement = $(element).next('div.CardNumRating__CardNumRatingNumber-sc-17t4b9u-2.gcFhmN');
+                const rating = ratingElement.text().trim();
+                if (rating) {
+                    ratings.push(rating);
                 }
-            }).filter(Boolean);
+            }
         });
 
         // Scrape the subject
-        const subject = await page.$eval('div.RatingHeader__StyledClass-sc-1dlkqw1-3.eXfReS', el => el.textContent.trim());
+        const subject = $('div.RatingHeader__StyledClass-sc-1dlkqw1-3.eXfReS').first().text().trim();
 
         if (!professorName || reviews.length === 0 || ratings.length === 0 || !subject) {
             throw new Error('Failed to scrape all necessary data.');
         }
 
+        // Randomly select one review
         const randomIndex = Math.floor(Math.random() * reviews.length);
         const selectedReview = reviews[randomIndex];
         const selectedRating = ratings[randomIndex];
 
-        // Path to the reviews.json file
+        // Save this review to the database (or JSON file)
         const filePath = path.join(process.cwd(), 'reviews.json');
         const fileContent = await fs.readFile(filePath, 'utf-8');
         const reviewsData = JSON.parse(fileContent);
@@ -221,7 +138,7 @@ export async function GET(req) {
             professor: professorName,
             subject: subject,
             stars: parseFloat(selectedRating),
-            review: selectedReview,
+            review: selectedReview
         });
 
         await fs.writeFile(filePath, JSON.stringify(reviewsData, null, 2));
@@ -232,13 +149,8 @@ export async function GET(req) {
             review: selectedReview,
             subject: subject
         }), { status: 200 });
-
     } catch (error) {
         console.error(`Error: ${error.message}`);
         return new Response(JSON.stringify({ error: `Failed to scrape and save the data: ${error.message}` }), { status: 500 });
-    } finally {
-        if (browser) {
-            await browser.close();
-        }
     }
 }
