@@ -180,9 +180,10 @@ export async function GET(req) {
             params: {
                 api_key: process.env.SCRAPER_API_KEY,
                 url: url,
-            }
+            },
+            timeout: 10000,  // Add a timeout in milliseconds
         });
-        
+    
         // Load the HTML data using cheerio
         const $ = cheerio.load(data);
 

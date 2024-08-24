@@ -419,6 +419,12 @@
       "subject": "CSCI343",
       "stars": null,
       "review": "She is awesome"
+    },
+    {
+      "professor": "Simina Fluture",
+      "subject": "CSCI343",
+      "stars": null,
+      "review": "To the CS Department,\nPlease fire her. We're sick and tired of our money being wasted on disasters. Enough is enough!"
     }
   ]
 }
