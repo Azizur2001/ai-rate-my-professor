@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import { TextField, Box, Button, Stack, AppBar, Toolbar, Typography, IconButton } from "@mui/material";
 import { useRouter } from 'next/navigation';
@@ -136,15 +136,17 @@ export default function AiRmp() {
           }}
           height={{
             xs: 'auto', // Auto height on small screens
-            md: '500px', // Fixed height on medium screens and up
+            md: '600px', // Increased height on medium screens and up
           }}
           border="1px solid"
           borderColor={mode === 'dark' ? 'text.primary' : 'text.secondary'}
+          borderRadius={2} // Rounded corners
           p={2} 
           spacing={3}
           sx={{
             bgcolor: mode === 'dark' ? 'background.paper' : 'background.default',
             color: mode === 'dark' ? 'text.primary' : 'text.secondary',
+            boxShadow: 3, // Adding shadow for depth
           }}
         >
           <Stack 
@@ -153,6 +155,18 @@ export default function AiRmp() {
             flexGrow={1} 
             overflow='auto'
             maxHeight='100%'
+            sx={{
+              '&::-webkit-scrollbar': {
+                width: '0.4em',
+              },
+              '&::-webkit-scrollbar-track': {
+                background: mode === 'dark' ? '#444' : '#ddd',
+              },
+              '&::-webkit-scrollbar-thumb': {
+                backgroundColor: mode === 'dark' ? '#888' : '#aaa',
+                borderRadius: '10px',
+              },
+            }}
           >
             {messages.map((message, index) => (
               <Box 
@@ -161,19 +175,20 @@ export default function AiRmp() {
                 justifyContent={message.role === 'assistant' ? 'flex-start' : 'flex-end'}
               >
                 <Box 
-                bgcolor={ 
-                  message.role === 'assistant' ? 'primary.main': 'secondary.main'
-                }
-                color="white"
-                borderRadius={16}
-                p={2}
-                sx={{
-                  maxWidth: {
-                    xs: '100%', // Full width on small screens
-                    sm: '75%', // 75% width on medium screens
-                    md: '60%', // 60% width on large screens
+                  bgcolor={ 
+                    message.role === 'assistant' ? 'primary.main': 'secondary.main'
                   }
-                }}
+                  color="white"
+                  borderRadius={16}
+                  p={2}
+                  sx={{
+                    maxWidth: {
+                      xs: '100%', // Full width on small screens
+                      sm: '75%', // 75% width on medium screens
+                      md: '80%', // 60% width on large screens
+                    },
+                    boxShadow: 3, // Adding shadow to message boxes
+                  }}
                 >
                   {message.content}
                 </Box>
@@ -189,7 +204,20 @@ export default function AiRmp() {
                 setMessage(e.target.value)
               }}
               sx={{
-                input: { color: mode === 'dark' ? 'text.primary' : 'text.secondary' },
+                input: { 
+                  color: mode === 'dark' ? 'text.primary' : 'text.secondary',
+                  backgroundColor: mode === 'dark' ? 'background.default' : 'background.paper', 
+                  borderRadius: 1, 
+                  padding: '10px 15px', // Adding padding for better touch experience
+                },
+                '& .MuiOutlinedInput-root': {
+                  '& fieldset': {
+                    borderColor: mode === 'dark' ? 'text.primary' : 'text.secondary',
+                  },
+                  '&:hover fieldset': {
+                    borderColor: mode === 'dark' ? 'primary.light' : 'primary.dark',
+                  },
+                },
               }}
             />
             <Button 
@@ -199,19 +227,22 @@ export default function AiRmp() {
                 width: {
                   xs: '100%', // Full width button on small screens
                   sm: 'auto', // Auto width on larger screens
-                }
+                },
+                bgcolor: 'secondary.main',
+                '&:hover': {
+                  bgcolor: 'secondary.dark',
+                },
               }}
             >
               Send
             </Button>
           </Stack>
           <Button 
-  variant="contained" 
-  onClick={() => router.push('/search')} 
-  sx={{ mt: 2, width: '100%' }}>
-  Advanced Search
-</Button>
-
+            variant="contained" 
+            onClick={() => router.push('/search')} 
+            sx={{ mt: 2, width: '100%', bgcolor: 'primary.main', '&:hover': { bgcolor: 'primary.dark' } }}>
+            Advanced Search
+          </Button>
         </Stack>
       </Box>
     </Box>
