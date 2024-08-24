@@ -75,6 +75,7 @@
 // }
 
 
+
 import axios from 'axios';
 import * as cheerio from 'cheerio';
 import { promises as fs } from 'fs';
@@ -88,10 +89,15 @@ export async function GET(req) {
     }
 
     try {
-        const apiKey = process.env.SCRAPER_API_KEY;
-        const scraperUrl = `http://api.scraperapi.com?api_key=${apiKey}&url=${encodeURIComponent(url)}`;
+        // Make the request using ScraperAPI
+        const { data } = await axios.get('https://api.scraperapi.com', {
+            params: {
+                api_key: process.env.SCRAPER_API_KEY, // Your ScraperAPI key from environment variables
+                url: url,
+                render: true, // Render JavaScript content if necessary
+            },
+        });
 
-        const { data } = await axios.get(scraperUrl);
         const $ = cheerio.load(data);
 
         // Scrape professor's first and last name
@@ -143,14 +149,13 @@ export async function GET(req) {
 
         await fs.writeFile(filePath, JSON.stringify(reviewsData, null, 2));
 
-        return new Response(JSON.stringify({
-            name: professorName,
-            rating: selectedRating,
+        return new Response(JSON.stringify({ 
+            name: professorName, 
+            rating: selectedRating, 
             review: selectedReview,
-            subject: subject
+            subject: subject 
         }), { status: 200 });
     } catch (error) {
-        console.error(`Error: ${error.message}`);
         return new Response(JSON.stringify({ error: `Failed to scrape and save the data: ${error.message}` }), { status: 500 });
     }
 }
