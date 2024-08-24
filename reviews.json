@@ -563,6 +563,30 @@
       "subject": "CSCI343",
       "stars": null,
       "review": "i basically lost my job because of her, and my future. hope she gets her karma back one day"
+    },
+    {
+      "professor": "Simina Fluture",
+      "subject": "CSCI343",
+      "stars": 5,
+      "review": "Amazing Lecture."
+    },
+    {
+      "professor": "Simina Fluture",
+      "subject": "CSCI343",
+      "stars": 4,
+      "review": "Took her in the spring for 340 and had to drop it. Thought she was bad, when it was really on me. Having 343 in the summer gave me more time to focus. The first half was more difficult than the second. Do the extra credit, it helps your understanding and your grade. She also tells you exactly what will be on the exams. That helped me ace the final."
+    },
+    {
+      "professor": "Simina Fluture",
+      "subject": "CSCI343",
+      "stars": 1,
+      "review": "All the possitive comments are written by her. Do not fall it."
+    },
+    {
+      "professor": "Simina Fluture",
+      "subject": "CSCI343",
+      "stars": 1,
+      "review": "Professor Fluture's teaching approach is deeply problematic and detrimental to students' learning. Her demeaning behavior, including calling students slow, stupid, or screw-ups, creates a hostile environment that undermines confidence and discourages learning. Do not take if you do not have a strong background in CS."
     }
   ]
 }
