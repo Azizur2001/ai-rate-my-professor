@@ -250,7 +250,7 @@ import { NextResponse } from "next/server";
 import { Pinecone } from "@pinecone-database/pinecone";
 import OpenAI from "openai";
 import { collection, query, where, getDocs } from 'firebase/firestore';
-import { db } from '../../firebase'; // Make sure this path is correct
+import { db } from '../../../firebase'; // Make sure this path is correct
 
 const systemPrompt = 
 `
