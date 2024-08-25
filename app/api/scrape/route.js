@@ -467,6 +467,8 @@
 // }
 
 
+
+
 import axios from 'axios';
 import * as cheerio from 'cheerio';
 import { db } from '../../../firebase'; // Make sure the path to your firebase.js is correct
@@ -548,5 +550,4 @@ export async function GET(req) {
         return new Response(JSON.stringify({ error: `Failed to fetch and parse the data: ${error.message}` }), { status: 500 });
     }
 }
-
 

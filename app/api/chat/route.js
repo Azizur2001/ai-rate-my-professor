@@ -249,8 +249,8 @@
 import { NextResponse } from "next/server";
 import { Pinecone } from "@pinecone-database/pinecone";
 import OpenAI from "openai";
-import { collection, query, where, getDocs } from 'firebase/firestore';
-import { db } from '../../../firebase'; // Make sure this path is correct
+import { collection, query, where, getDocs, orderBy, limit } from 'firebase/firestore';
+import { db } from '../../../firebase'; // Ensure this path is correct
 
 const systemPrompt = 
 `
@@ -322,9 +322,12 @@ export async function POST(req) {
 
     // Fetching reviews from Firebase Firestore
     try {
-       // Fetching reviews from Firebase Firestore
         const reviewsCollection = collection(db, 'reviews'); // Correct the reference here
-        const q = query(reviewsCollection);
+        const q = query(
+            reviewsCollection,
+            orderBy('scrapedAt', 'desc'), // Order by the most recently added
+            limit(5) // Limit to a certain number of reviews to avoid excessive data
+        );
         const querySnapshot = await getDocs(q);
         const firebaseReviews = [];
         querySnapshot.forEach((doc) => {

@@ -1,21 +1,15 @@
-
-import { collection, query, getDocs } from 'firebase/firestore';
-import { db } from '../../../firebase'; // Ensure this path is correct
+import { readFile } from 'fs/promises';
+import path from 'path';
 
 export async function POST(req) {
   const { subject, minRating, discussionBased, keywords } = await req.json();
 
   try {
-    const reviewsCollection = collection(db, 'reviews'); // Correct the reference here
-    const q = query(reviewsCollection);
-    const querySnapshot = await getDocs(q);
-    const firebaseReviews = [];
+    const filePath = path.join(process.cwd(), 'reviews.json');
+    const jsonData = await readFile(filePath, 'utf8');
+    const reviews = JSON.parse(jsonData).reviews;
 
-    querySnapshot.forEach((doc) => {
-      firebaseReviews.push(doc.data());
-    });
-
-    let filteredReviews = firebaseReviews;
+    let filteredReviews = reviews;
 
     if (subject) {
       filteredReviews = filteredReviews.filter(review =>
