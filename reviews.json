@@ -437,6 +437,42 @@
       "subject": "CSCI343",
       "stars": 5,
       "review": "340 done now on to Fall.  Enjoy august break everyone"
+    },
+    {
+      "professor": "Anne Smith-Thompson",
+      "subject": "CSCI316",
+      "stars": null,
+      "review": "cuny should be doing quality check of professors, she does not know out of the other than what she has taught, and i get lost from where she is teaching boring, jumping every context, self study does not work with her. the most bizzare thing is you can get easily get out of focus what she is teaching in class."
+    },
+    {
+      "professor": "Anne Smith-Thompson",
+      "subject": "CSCI316",
+      "stars": 5,
+      "review": "HORRIBLE. Took her for 343 last semester and now taking her for 340. Exams are not fair. Her lectures just consist of her going over zybooks and telling useless stories. Good luck to anyone taking her in the future."
+    },
+    {
+      "professor": "Anne Smith-Thompson",
+      "subject": "CSCI316",
+      "stars": null,
+      "review": "Prof. Smith is kind, caring, fair, responds quickly to emails, and teaches well. Make sure you're comfortable with Java if taking 313 (review labs & old projects). If you show up to class, PARTICIPATE, do all assignments, and study, you'll pass. Grade consisted of quizzes, 3 part Java project, final, and zybooks hw."
+    },
+    {
+      "professor": "Saeed Zakeri",
+      "subject": "MATH202",
+      "stars": 5,
+      "review": "He is an OK professor. Definitely not all that like these other reviews are saying. That being said he is an amazing lecturer and makes most if not all of the calculus 2 concepts easy to understand. Yes, his exams are similar to the review sheet, HOWEVER, he gives little to no partial credit (at least to me). Best math professor QC has."
+    },
+    {
+      "professor": "Saeed Zakeri",
+      "subject": "MATH202",
+      "stars": 5,
+      "review": "He is a fair grader. He curved in the last moment. I took him for math 231 and 201 in a same time. He curved his both classes. His lectures were clear and explains everything very well."
+    },
+    {
+      "professor": "Saeed Zakeri",
+      "subject": "MATH202",
+      "stars": 5,
+      "review": "He is a fair grader. He curved in the moment. I took him for math 231 and 201 in a same time. He curved his both classes. His lectures were clear and explains everything very well."
     }
   ]
 }
