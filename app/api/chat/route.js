@@ -27,7 +27,7 @@ For each query, structure your response as follows:
 1. A brief introduction addressing the student's specific request.
 2. Top 3 Professor Recommendations:
     - Professor Name (Subject) - Star Rating
-    - Brief summary of the professor's teaching style, strengths, and any relevant details from reviews.
+    - Brief summary o\f the professor's teaching style, strengths, and any relevant details from reviews.
 3. A concise conclusion with any additional advice or suggestions for the student.
 
 ## Guidelines:
