@@ -1,10 +1,10 @@
-'use client';
+'use client'
 
 import { TextField, Box, Button, AppBar, Toolbar, Typography, IconButton } from "@mui/material";
 import { useState, useContext } from "react";
 import { useRouter } from 'next/navigation';
-import { auth } from '../../firebase';
-import { signInWithEmailAndPassword } from "firebase/auth";
+import { auth, provider } from '../../firebase'; // Import the provider
+import { signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
 import { ThemeContext } from '../ThemeContext';
@@ -24,6 +24,15 @@ export default function Login() {
     try {
       await signInWithEmailAndPassword(auth, email, password);
       router.push('/ai-rmp');  // Redirect to chatbot page after login
+    } catch (error) {
+      setError(error.message);
+    }
+  };
+
+  const handleGoogleSignIn = async () => {
+    try {
+      await signInWithPopup(auth, provider);
+      router.push('/ai-rmp');  // Redirect to chatbot page after Google login
     } catch (error) {
       setError(error.message);
     }
@@ -182,6 +191,27 @@ export default function Login() {
             }}
           >
             Log In
+          </Button>
+          <Button 
+            variant="outlined" 
+            fullWidth 
+            onClick={handleGoogleSignIn} 
+            sx={{ 
+              mt: 2,
+              fontSize: {
+                xs: '1rem',
+                sm: '1.25rem'
+              },
+              padding: '10px 20px',
+              borderColor: theme.palette.primary.main,
+              color: theme.palette.primary.main,
+              '&:hover': {
+                borderColor: theme.palette.primary.dark,
+                backgroundColor: theme.palette.background.default,
+              }
+            }}
+          >
+            Sign In with Google
           </Button>
           <Typography mt={2} textAlign="center">
             Don&apos;t have an account?{" "}
